@@ -110,6 +110,8 @@ input, select, textarea {
 
 
 
+
+
 		@media screen and (max-width: 736px) {
 			.p-left {
 			  font-size: 1em;
@@ -313,7 +315,7 @@ input, select, textarea {
 		border: solid 1px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
-		margin: 0 0.25em;
+		margin: 0 0 0 1.5em;
 		padding: 0.25em 0.65em;
 	}
 
@@ -2789,12 +2791,14 @@ input, select, textarea {
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
+		/* margin: 0 auto; */
 	}
 
 
 
 	table {
-		margin: 0 0 2em 0;
+		margin: 0 auto 1em auto;
+		/* margin: 0 0 2em 0; */
 		font-size: 1.25em
 	}
 	
@@ -3137,7 +3141,7 @@ input, select, textarea {
 			
 			
 				.spotlight video {
-					margin: 0 0 1em 1em;
+					margin: 1em;
 				}
 				
 
@@ -3245,10 +3249,10 @@ input, select, textarea {
 				-webkit-transition: opacity 3s ease;
 				-ms-transition: opacity 3s ease;
 				transition: opacity 3s ease;
-				-moz-transition-delay: 0.5s;
-				-webkit-transition-delay: 0.5s;
-				-ms-transition-delay: 0.5s;
-				transition-delay: 0.5s;
+				-moz-transition-delay: 0.2s;
+				-webkit-transition-delay: 0.2s;
+				-ms-transition-delay: 0.2s;
+				transition-delay: 0.2s;
 				opacity: 1;
 			}
 
