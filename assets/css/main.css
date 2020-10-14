@@ -2311,7 +2311,7 @@ input, select, textarea {
 			display: inline-block;
 			border-radius: 100%;
 			padding: 0.65em;
-			margin: 0 0 2em 0;
+			margin: 0 0 0.5em 0;
 			cursor: default;
 		}
 
@@ -3136,7 +3136,7 @@ input, select, textarea {
 			
 			
 				.spotlight video {
-					margin: 1em;
+					margin: 0 0 1em 1em;
 				}
 				
 
@@ -3760,7 +3760,7 @@ input, select, textarea {
 		}
 
 		#main > .main {
-			padding: 3em 5em 1em 5em ;
+			padding: 2em 4em 1em 4em ;
 			border-top: solid 1px #dddddd;
 		}
 
@@ -3787,7 +3787,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#main > .main {
-				padding: 4em 4em 1em 4em ;
+				padding: 2em 3em 1em 3em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3800,7 +3800,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#main > .main {
-				padding: 4em 3em 2em 3em ;
+				padding: 2em 2em 2em 2em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3813,7 +3813,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#main > .main {
-				padding: 3em 2em 1em 2em ;
+				padding: 2em 2em 1em 2em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3826,7 +3826,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			#main > .main {
-				padding: 3em 1.5em 1em 1.5em ;
+				padding: 2em 1.5em 1em 1.5em ;
 			}
 
 				#main > .main > .image.main:first-child {
@@ -3843,7 +3843,7 @@ input, select, textarea {
 			}
 
 				#main > .main {
-					padding: 2.5em 1em 0.5em 1em ;
+					padding: 1em 1em 0.5em 1em ;
 				}
 
 					#main > .main > .image.main:first-child {
