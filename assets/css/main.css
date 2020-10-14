@@ -2011,8 +2011,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ff8f00;
-			color: #ffffff !important;
+			background-color: #ffd39a;
+			color: #535353 !important;
 			box-shadow: none;
 			font-weight: bold;
 		}
@@ -3597,8 +3597,8 @@ input, select, textarea {
 			#main input[type="button"].primary,
 			#main button.primary,
 			#main .button.primary {
-				background-color: #ff8f00;
-				color: #ffffff !important;
+				background-color: #ffd39a;
+				color: #535353 !important;
 				box-shadow: none;
 				font-weight: bold;
 			}
