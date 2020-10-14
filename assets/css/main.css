@@ -2381,7 +2381,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.icon.major {
-				margin: 0 0 1.5em 0;
+				margin: 1em 0 0.5em 0;
 				padding: 0.35em;
 			}
 
