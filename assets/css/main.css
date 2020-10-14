@@ -3089,7 +3089,7 @@ input, select, textarea {
 			}
 
 			.spotlight .content header.major {
-				margin: 0 0 2em 0;
+				margin: 0 0 0em 0;
 			}
 
 		.spotlight .image {
@@ -3113,20 +3113,37 @@ input, select, textarea {
 				border-radius: 100%;
 				width: 16em;
 			}
+			
+			
+			
+				.spotlight video {
+					margin: 1em;
+				}
+				
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 736px) {
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		@media screen and (max-width: 736px) {
 
 			.spotlight {
-				-moz-flex-direction: column-reverse;
-				-webkit-flex-direction: column-reverse;
-				-ms-flex-direction: column-reverse;
-				flex-direction: column-reverse;
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
 				text-align: left;
 			}
 			
-			.spotlight .content h2 {
-				text-align: center;
-			}
+			/* .spotlight .content h2 { */
+				/* text-align: center; */
+			/* } */
 
 				.spotlight .content {
 					-moz-flex: 0 1 auto;
@@ -3157,20 +3174,22 @@ input, select, textarea {
 					margin-left: 0;
 					margin-bottom: 2em;
 				}
+				
+				
 
 		}
 
-		@media screen and (max-width: 736px) {
+		/* @media screen and (max-width: 736px) { */
 
-			.spotlight .image {
-				padding: 0.35em;
-			}
+			/* .spotlight .image { */
+				/* padding: 0.35em; */
+			/* } */
 
-				.spotlight .image img {
-					width: 12em;
-				}
+				/* .spotlight .image img { */
+					/* width: 12em; */
+				/* } */
 
-		}
+		/* } */
 
 	.spotlight .image {
 		border-color: rgba(255, 255, 255, 0.35);
@@ -3194,7 +3213,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 2em 3em 1em 3em ;
+			padding: 2em 3em 2em 3em ;
 		}
 
 			#header.alt h1 {
@@ -3241,7 +3260,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 2em 2em 1.5em 2em ;
+					padding: 2em 2em 2em 2em ;
 				}
 				
 					#header.alt .logo {
