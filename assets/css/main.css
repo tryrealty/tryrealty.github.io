@@ -152,10 +152,12 @@ input, select, textarea {
 
 	body {
 		background-color: #808080 ;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #9b9b9b  15%, #808080  85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #9b9b9b  15%, #808080  85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #9b9b9b  15%, #808080  85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #9b9b9b  15%, #808080  85%);
+		/* background-image: url("images/skyscraper-city-seamless.jpg"); */
+		/* background-repeat: repeat; */
+		background-image: url("images/overlay.png"), -moz-linear-gradient(70deg, #393a91 20%, #317580 80%);
+		/* background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #91396f   15%, #317580   85%); */
+		/* background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #91396f   15%, #317580   85%); */
+		background-image: url("images/overlay.png"), linear-gradient(70deg, #393a91 20%, #317580 80%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3271,13 +3273,71 @@ input, select, textarea {
 				margin: 1em 3em 1em 0em;
 				height: 200px;
 				width: 200px;
+				background-image: url("images/logo_pan.png");
+				background-size: contain;
 			}
+			
+			
+			
+		
 
 				#header.alt .logo img {
+					animation: pulse 8s infinite;
+					
 					display: block;
 					margin: 0 auto;
 					max-width: 100%;
+					
+  /* animation-direction: alternate; */
+  /* -webkit-animation-name: pulse; */
+  /* animation-name: pulse; */
 				}
+				
+				
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+    
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
 
 		@media screen and (max-width: 1280px) {
 
