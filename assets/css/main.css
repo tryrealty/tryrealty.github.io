@@ -123,6 +123,15 @@ input, select, textarea {
 			
 			
 		}
+		
+		
+		
+		
+.top_bar {
+	width: 100%;
+	text-align: right;
+	
+}
 
 /* Basic */
 
@@ -3248,7 +3257,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 2em 3em 2em 3em ;
+			padding: 1em 3em 2em 3em ;
 		}
 
 			#header.alt h1 {
@@ -3353,7 +3362,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 2em 2em 2em 2em ;
+					padding: 0 2em 2em 2em ;
 				}
 				
 					#header.alt .logo {
@@ -3371,7 +3380,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 2em 1.5em 1em 1.5em ;
+					padding: 0 1.5em 1em 1.5em ;
 				}
 
 		}
@@ -3392,7 +3401,7 @@ input, select, textarea {
 					}
 
 				#header.alt {
-					padding: 2em 1em 2em 1em ;
+					padding: 0 1em 2em 1em ;
 				}
 
 					#header.alt h1 {
@@ -3418,7 +3427,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 2em 1em 1em 1em ;
+					padding: 0 1em 1em 1em ;
 				}
 				
 				
@@ -3445,7 +3454,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 2em 1em 0.5em 1em ;
+					padding: 0 1em 0.5em 1em ;
 				}
 
 		}
