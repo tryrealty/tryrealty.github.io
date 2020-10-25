@@ -4,7 +4,7 @@
 		<title>three.js webgl - panorama</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-		<link type="text/css" rel="stylesheet" href="three.js%20webgl%20-%20panorama_files/main.css">
+		<link type="text/css" rel="stylesheet" href="main.css">
 	</head>
 	<body>
 		<div id="container"><canvas width="563" height="966" style="width: 563px; height: 966px;" tabindex="0"></canvas></div>
@@ -14,7 +14,7 @@
 
 		<script type="module">
 
-			import * as THREE from 'three.module.js';
+			import * as THREE from '/three.module.js';
 
 			import { OrbitControls } from 'OrbitControls.js';
 
@@ -27,7 +27,7 @@
 
 			function init() {
 
-				var container = document.getElementById( 'container' );
+				var container = document.getElementById( '/container' );
 
 				renderer = new THREE.WebGLRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
@@ -45,7 +45,7 @@
 				controls.enableDamping = true;
 				controls.rotateSpeed = - 0.25;
 
-				var textures = getTexturesFromAtlasFile( "sun_temple_stripe.jpg", 6 );
+				var textures = getTexturesFromAtlasFile( "/sun_temple_stripe.jpg", 6 );
 
 				var materials = [];
 
