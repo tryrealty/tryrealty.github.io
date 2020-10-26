@@ -38,7 +38,7 @@
 
 				scene = new THREE.Scene();
 
-				camera = new THREE.OrthographicCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
+				camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.1, 100 );
 				camera.position.z = 0.01;
 
 				controls = new OrbitControls( camera, renderer.domElement );
