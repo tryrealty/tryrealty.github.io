@@ -387,6 +387,7 @@
 			
 			var width = 250;
 			var height = 400;
+			var pixelRatio = width/height;
 
 			var isUserInteracting = false,
 				onPointerDownMouseX = 0, onPointerDownMouseY = 0,
@@ -402,7 +403,7 @@
 
 				container = document.getElementById( 'container' );
 
-				camera = new THREE.PerspectiveCamera( 100, 1, 1, 1100 );
+				camera = new THREE.PerspectiveCamera( 100, pixelRatio, 1, 1100 );
 				camera.target = new THREE.Vector3( 0, 0, 0 );
 
 				scene = new THREE.Scene();
@@ -419,7 +420,7 @@
 				scene.add( mesh );
 
 				renderer = new THREE.WebGLRenderer();
-				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setPixelRatio( pixelRatio );
 				renderer.setSize( width, height );
 				container.appendChild( renderer.domElement );
 
@@ -474,7 +475,7 @@
 
 			function onWindowResize() {
 
-				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.aspect = pixelRatio;
 				camera.updateProjectionMatrix();
 
 				renderer.setSize( width, height );
