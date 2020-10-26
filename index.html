@@ -151,7 +151,7 @@
 										<!-- </ul> -->
 									</div>
 									<code class="align-center">Как это работает:<br />
-										<div id="container" style="touch-action: none;"><canvas width="250" height="400" style="width: 250px; height: 400px;"></canvas></div>
+										<div id="container" style="touch-action: none;"></div>
 										<!-- <video onloadeddata="this.play()" poster="images/video_preview.jpg" height="400" preload="auto" autoplay="true" loop="true" muted="muted" style="border: 1px solid black" controls> -->
 											<!-- <source src="video.mp4" type="video/mp4"> -->
 											<!-- <source src="video.webm" type="video/webm" /> -->
@@ -474,7 +474,7 @@
 				camera.aspect = window.innerWidth / window.innerHeight;
 				camera.updateProjectionMatrix();
 
-				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.setSize( 250, 400 );
 
 			}
 
