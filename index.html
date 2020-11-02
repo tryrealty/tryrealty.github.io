@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/lity.min.css" />
 	</head>
 	<body class="is-preload">
 
@@ -35,18 +36,10 @@
 							<p>Создание и размещение в <strong>Instagram </strong><span style="display: inline-block;"> и <strong> Facebook Ads</strong></span><br />
 							Образец панорамы <a href="https://www.instagram.com/ar/838331786971905/" target="_blank">@try.estate</a> в приложении<br />
 							</p>
-							<a href="#win1" class="button large scrolly">ВИДЕО</a>
-							<a href="panoramas360_try.estate.pdf" target="_blank" class="button large scrolly">ПРЕЗЕНТАЦИЯ</a>
+							<a href="//www.youtube.com/watch?v=VSEHHqfxwBY" data-lity class="button large scrolly">ВИДЕО</a>
+							<a href="panoramas360_try.estate.pdf" target="_blank"  data-video-id="7TUOI23spt0" class="button large scrolly">ПРЕЗЕНТАЦИЯ</a>
 							
-<!-- Модальное окно №3 -->
-        <!-- <a href="#x" class="overlay" id="win1"></a> -->
-        <!-- <div class="popup"> -->
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GiiaZH3fh0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <!-- <a class="close" title="Закрыть" href="page.html" onclick="return false"></a><!-- Выключение видео при закрытии окна --> -->
-        <!-- </div> -->
-		
-		
-							<!-- <a href="#" class="button large scrolly">Презентация PDF</a> -->
+							
 						</div>
 					</div>
 				</div>
@@ -300,6 +293,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/lity.min.js"></script>
+			
+			
+			
+	<script>
+		$(".js-video-button").modalVideo({
+			youtube:{
+				controls:0,
+				nocookie: true,
+				autoplay: 1
+			}
+		});
+	</script>
 
 	</body>
 </html>
