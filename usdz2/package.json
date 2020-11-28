@@ -1,0 +1,9 @@
+{
+  "name": "dope-chair-model-viewer",
+  "version": "1.0.0",
+  "description": "Simple web page with a Dope chair",
+  "main": "index.html",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {}
+}
