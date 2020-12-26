@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Сервис - X-Mebel - мебель на заказ</title>
+    <meta name="description" content="Производство мебели на заказ. Кухни, прихожие, гостиные, шкафы. Мебель для бизнеса.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:700|Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/prettyPhoto.css"/>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/ico">
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.24530.js"></script>
+	
+
+</head>
+<body>
+<!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34181130 = new Ya.Metrika({ id:34181130, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/34181130" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+
+<div id="myModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Заказать звонок</h4>
+</div>
+		<!--<form action= "post2.php" method= "POST" style="padding: 20px">-->
+		<form method="post" action="" id="formMain" name="formMain" style="padding: 20px" novalidate>
+		<div id="messegeResult" style="color: red; text-align: center">
+    
+	<div id="messegeError"></div>
+	
+<input type="text" class="form-control" name="name" id="name" placeholder="Введите имя" /> <br /> 
+<input type="text" class="form-control" name="number" id="number" placeholder="Введите номер" /> <br /> 
+<font style="color: red">Заказы обрабатываются с 10:00 до 22:00 без выходных</font> <br /> <br /> 
+<!--<input type= "submit" class="btn btn-default" value= "Отправить">-->
+<input id="button" type="button"  value="Заказать обратный звонок" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')" class="btn btn-default" /> <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+
+
+</div>
+</form>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="boxed-container">
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo.png" alt="BuildPress" class="img-responsive"/>
+				</a>
+			</div>
+			<div class="header-widgets  header-widgets-desktop">
+				<div class="widget  widget-icon-box">	
+					<div class="icon-box">
+						<i class="fa  fa-phone  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">+7 (499) 394-10-76</h4>
+							<span class="icon-box__subtitle"><a href="#" onclick="AjaxFormReload()" data-toggle="modal" data-target="#myModal"><i class="fa fa-external-link-square"></i> Мы перезвоним!</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-icon-box">	
+					<div class="icon-box">
+						<i class="fa fa-home fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">Силикатная, 19</h4>
+							<span class="icon-box__subtitle">МО, Мытищи</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-icon-box">	
+					<div class="icon-box">
+						<i class="fa  fa-clock-o  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">10:00 - 22.00</h4>
+							<span class="icon-box__subtitle">Без выходных</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-social-icons">	
+					<a class="social-icons__link" href="https://www.instagram.com/xmebel/" target="_blank"><i class="fa  fa-instagram"></i></a>
+				</div>	
+			</div>
+			<!-- Toggle Button for Mobile Navigation -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#buildpress-navbar-collapse">
+				<span class="navbar-toggle__text">Меню</span>
+				<span class="navbar-toggle__icon-bar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</span>
+			</button>
+		</div>
+		<div class="sticky-offset js-sticky-offset"></div>
+		<div class="container">
+			<div class="navigation">
+				<div class="collapse  navbar-collapse" id="buildpress-navbar-collapse">
+					<ul id="menu-main-menu" class="navigation--main">
+						<li class="current-menu-item"><a href="index.html">Главная</a></li>
+						<li><a href="projects.html">Наши работы</a></li>
+						<li> <!--class="menu-item-has-children"-->
+							<a href="services.html">Услуги</a>
+						</li>
+						<li><a href="about.html">О нас</a></li>
+						<!--<li><a href="shop.html">SHOP</a></li> -->
+						<li><a href="contact-us.html">Контакты</a></li>
+					</ul>	
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="header-widgets  hidden-md  hidden-lg">
+				<div class="widget  widget-icon-box">	
+					<div class="icon-box">
+						<i class="fa  fa-phone  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">+7 (499) 394-10-76</h4>
+							<span class="icon-box__subtitle"><a href="#" onclick="AjaxFormReload()" data-toggle="modal" data-target="#myModal"><i class="fa fa-external-link-square"></i> Мы перезвоним!</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-icon-box">	
+					<div class="icon-box">
+						<i class="fa  fa-home  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">Силикатная, 19</h4>
+							<span class="icon-box__subtitle">МО, Мытищи</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-icon-box">	
+					<div class="icon-box">
+						<i class="fa  fa-clock-o  fa-3x"></i>
+						<div class="icon-box__text">
+							<h4 class="icon-box__title">10:00 - 22.00</h4>
+							<span class="icon-box__subtitle">Без выходных</span>
+						</div>
+					</div>
+				</div>
+				<div class="widget  widget-social-icons">	
+					<a class="social-icons__link" href="https://www.instagram.com/xmebel/" target="_blank"><i class="fa  fa-instagram"></i></a>
+				</div>	
+			</div>
+		</div>
+	</header>
+
+
+	<div class="main-title" style="background-color: #f2f2f2">
+		<div class="container">
+			<h1 class="main-title__primary">Услуги</h1>
+			<h3 class="main-title__secondary">ВЫПОЛНЕНИЕ ПРОФИЛЬНЫХ РАБОТЫ</h3>
+		</div>
+	</div>
+	<div class="breadcrumbs ">
+		<div class="container">
+			<span typeof="v:Breadcrumb"><a title="Go to BuildPress." href="index.html" class="home">X-Mebel</a></span>
+			<span typeof="v:Breadcrumb"><span>Услуги</span></span>	
+		</div>
+	</div>
+	<div class="master-container">
+		<div class="container">
+			<div class="row">
+				<main class="col-xs-12  col-md-12" role="main">
+					<div class="row">
+						<div class="col-md-4 page-box page-box--block">
+								<img width="360" height="240" src="images/demo/content/content_1.jpg" alt="Content Image" /> 	
+							<div class="page-box__content">
+								<h5 class="page-box__title  text-uppercase">
+									Дизайн - проект
+								</h5>
+								Наш дизайнер готов приехать, выполнить замер, предложить различные варианты дизайна и планировки.	
+							</div>
+						</div>
+						<div class="col-md-4 page-box page-box--block">
+								<img width="360" height="240" src="images/demo/content/content_2.jpg" alt="Content Image" />
+							<div class="page-box__content">
+								<h5 class="page-box__title text-uppercase">
+									Создание мебели
+								</h5>
+								Производство мебели начинается сразу после утверждения проекта. Мы работаем без срывов сроков.
+							</div>
+						</div>
+						
+						<div class="col-md-4 page-box page-box--block">
+								<img width="360" height="240" src="images/demo/content/content_3.jpg" alt="Content Image" />
+							<div class="page-box__content">
+								<h5 class="page-box__title text-uppercase">
+									Доставка
+								</h5>
+								Мы осуществляем доставку в любую точку России. У нас есть свой автопарк и водители.	
+							</div>
+						</div>
+					</div>	
+					<div class="spacer"></div>
+					<div class="row">	
+						<div class="col-md-4 page-box page-box--block">
+								<img width="360" height="240" src="images/demo/content/content_4.jpg" alt="Content Image" /> 	
+							<div class="page-box__content">
+								<h5 class="page-box__title text-uppercase">
+									Сборка
+								</h5>
+								Опытные сборщики быстро и качественно соберут мебель на месте.
+							</div>
+						</div>
+						<div class="col-md-4 page-box page-box--block">
+								<img width="360" height="240" src="images/demo/content/content_5.jpg" alt="Content Image" />
+							<div class="page-box__content">
+								<h5 class="page-box__title text-uppercase">
+									Гарантийное обслуживание
+								</h5>
+								Гарантийные сроки обговариваются индивидуально, возможно оформление увеличенного срока гарантийного обслуживания.
+							</div>
+						</div>
+						
+						<div class="col-md-4 page-box page-box--block">
+								<img width="360" height="240" src="images/demo/content/content_6.jpg" alt="Content Image" />
+							<div class="page-box__content">
+								<h5 class="page-box__title text-uppercase">
+									Постгарантийное обслуживание
+								</h5>
+								Мы осуществляем технические работы и по истечении срока гарантии.	
+							</div>
+						</div>
+					</div>
+				</main>
+				
+			</div>
+		</div>
+	</div><!-- /container -->
+
+	<footer>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="widget  widget_text  push-down-30">
+							<h6 class="footer__headings">О нас</h6>	
+							<div class="textwidget">
+								<img src="images/logo_footer.png" alt="Footer Logo" width="218" />
+								<br><br>
+								Мы осуществляем проектирование и производство мебели различного назначения, как бытового, так и коммерческого. У нас Вы можете заказать кухню, гостиную, прихожую, гардеробную, торговую мебель.
+								<br><br>
+								<strong><a href="about.html" class="read-more">Подробнее о нас</a></strong>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12  col-md-4">
+						<div class="widget  widget_nav_menu  push-down-30">
+							<h6 class="footer__headings">Карта сайта</h6>
+							<div class="menu-top-menu-container">
+								<ul id="menu-top-menu-1" class="menu">
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="projects.html">Наши работы</a></li>
+									<li><a href="services.html">Услуги</a></li>
+									<li><a href="about.html">О нас</a></li>
+									<li><a href="contact-us.html">Контакты</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12  col-md-4">
+						<div class="widget  widget_text  push-down-30">
+							<h6 class="footer__headings">Сделать заказ</h6>	
+							<div class="textwidget">
+								Наши менеджеры готовы проконсультировать Вас. Вы можете оставить заявку на обратный звонок.
+								<br><br>
+								<a class="btn  btn-primary" href="#" onclick="AjaxFormReload()" data-toggle="modal" data-target="#myModal">Обратный звонок</a>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="footer-bottom__left">
+					<a href="http://X-MEBEL.ORG">X-MEBEL.ORG</a>
+				</div>
+				<div class="footer-bottom__right">
+					&copy; 2016 <strong>X-MEBEL</strong>. All rights reserved.	
+				</div>
+			</div>
+		</div>
+	</footer>
+</div><!-- end of .boxed-container -->
+
+<script type="text/javascript" src="js/almond.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="js/header_carousel.js"></script>
+<script type="text/javascript" src="js/sticky_navbar.js"></script>
+<script type="text/javascript" src="js/simplemap.js"></script>
+<script type="text/javascript" src="js/main.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
