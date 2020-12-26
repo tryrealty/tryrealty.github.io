@@ -1,57 +1,62 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8"/>
-	<title>BuildPress | We Build Structures &amp; Relationships to Last</title>
+	<title>Наши работы - X-Mebel - мебель на заказ</title>
+    <meta name="description" content="Производство мебели на заказ. Кухни, прихожие, гостиные, шкафы. Мебель для бизнеса.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 		<![endif]-->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400,700%3Alatin%7CMontserrat%3A700%3Alatin"/>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:700|Open+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/prettyPhoto.css"/>
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/ico">
 	
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/isotope.js"></script>
 	<script type="text/javascript" src="js/imagesloaded.js"></script>
 	<script type="text/javascript" src="js/modernizr.custom.24530.js"></script>
-
+	
+	
 </head>
 <body class="home page">
 
+<!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34181130 = new Ya.Metrika({ id:34181130, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/34181130" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+
+<div id="myModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Заказать звонок</h4>
+</div>
+		<!--<form action= "post2.php" method= "POST" style="padding: 20px">-->
+		<form method="post" action="" id="formMain" name="formMain" style="padding: 20px" novalidate>
+		<div id="messegeResult" style="color: red; text-align: center">
+    
+	<div id="messegeError"></div>
+	
+<input type="text" class="form-control" name="name" id="name" placeholder="Введите имя" /> <br /> 
+<input type="text" class="form-control" name="number" id="number" placeholder="Введите номер" /> <br /> 
+<font style="color: red">Заказы обрабатываются с 10:00 до 22:00 без выходных</font> <br /> <br /> 
+<!--<input type= "submit" class="btn btn-default" value= "Отправить">-->
+<input id="button" type="button"  value="Заказать обратный звонок" onclick="AjaxFormRequest('messegeResult', 'formMain', 'form.php')" class="btn btn-default" /> <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+
+
+</div>
+</form>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div>
+
+
+
+
+
 <div class="boxed-container">
-	<div class="top">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12  col-md-6">
-					<div class="top__left">We Build Structures &amp; Relationships to Last	</div>
-				</div>
-				<div class="col-xs-12  col-md-6">
-					<div class="top__right">
-						<ul id="menu-top-menu" class="navigation--top">
-							<li class="menu-item-has-children"><a href="extras.html">Extras</a>
-								<ul class="sub-menu">
-									<li><a href="shortcodes.html">Shortcodes</a></li>
-									<li><a href="tables.html">Tables</a></li>
-									<li><a href="brochure-box.html">Brochure Box</a></li>
-								</ul>
-							</li>
-							<li class="menu-item-has-children"><a href="alternative-page.html">Alternative Pages</a>
-								<ul class="sub-menu">
-									<li><a href="shop-front.html">Home for Shop</a></li>
-									<li><a href="contact-multiple-locations.html">Multiple Contacts</a></li>
-									<li><a href="team-contact-combined.html">Team &#038; Contact</a></li>
-								</ul>
-							</li>
-							<li><a target="_blank" href="http://weblusive-themes.com/buildpress/documentation">Online Documentation</a></li>
-						</ul>				
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<header class="header">
 		<div class="container">
 			<div class="logo">
@@ -64,8 +69,8 @@
 					<div class="icon-box">
 						<i class="fa  fa-phone  fa-3x"></i>
 						<div class="icon-box__text">
-							<h4 class="icon-box__title">1-888-123-4567</h4>
-							<span class="icon-box__subtitle">info@buildpress.com</span>
+							<h4 class="icon-box__title">+7 (499) 394-10-76</h4>
+							<span class="icon-box__subtitle"><a href="#" onclick="AjaxFormReload()" data-toggle="modal" data-target="#myModal"><i class="fa fa-external-link-square"></i> Мы перезвоним!</a></span>
 						</div>
 					</div>
 				</div>
@@ -73,8 +78,8 @@
 					<div class="icon-box">
 						<i class="fa fa-home fa-3x"></i>
 						<div class="icon-box__text">
-							<h4 class="icon-box__title">227 Marion Street</h4>
-							<span class="icon-box__subtitle">Columbia, SC 29201</span>
+							<h4 class="icon-box__title">Силикатная, 19</h4>
+							<span class="icon-box__subtitle">МО, Мытищи</span>
 						</div>
 					</div>
 				</div>
@@ -82,20 +87,18 @@
 					<div class="icon-box">
 						<i class="fa  fa-clock-o  fa-3x"></i>
 						<div class="icon-box__text">
-							<h4 class="icon-box__title">Mon - Sat 8.00 - 18.00</h4>
-							<span class="icon-box__subtitle">Sunday CLOSED</span>
+							<h4 class="icon-box__title">10:00 - 22.00</h4>
+							<span class="icon-box__subtitle">Без выходных</span>
 						</div>
 					</div>
 				</div>
 				<div class="widget  widget-social-icons">	
-					<a class="social-icons__link" href="#" target="_blank"><i class="fa  fa-facebook"></i></a>
-					<a class="social-icons__link" href="#" target="_blank"><i class="fa  fa-twitter"></i></a>
-					<a class="social-icons__link" href="#" target="_blank"><i class="fa  fa-youtube"></i></a>
+					<a class="social-icons__link" href="https://www.instagram.com/xmebel/" target="_blank"><i class="fa  fa-instagram"></i></a>
 				</div>	
 			</div>
 			<!-- Toggle Button for Mobile Navigation -->
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#buildpress-navbar-collapse">
-				<span class="navbar-toggle__text">MENU</span>
+				<span class="navbar-toggle__text">Меню</span>
 				<span class="navbar-toggle__icon-bar">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -103,29 +106,19 @@
 				</span>
 			</button>
 		</div>
-		<div class="sticky-offset  js-sticky-offset"></div>
+		<div class="sticky-offset js-sticky-offset"></div>
 		<div class="container">
 			<div class="navigation">
 				<div class="collapse  navbar-collapse" id="buildpress-navbar-collapse">
 					<ul id="menu-main-menu" class="navigation--main">
-						<li class="current-menu-item"><a href="index.html">HOME</a></li>
-						<li><a href="projects.html">PROJECTS</a></li>
-						<li class="menu-item-has-children">
-							<a href="services.html">OUR SERVICES</a>
-							<ul class="sub-menu">
-								<li><a href="services-content/construction-management.html">Construction Management</a></li>
-								<li><a href="services-content/design-and-build.html">Design and Build</a></li>
-								<li><a href="services-content/kitchen-remodeling.html">Kitchen Remodeling</a></li>
-								<li><a href="services-content/tiling-and-painting.html">Tiling and Painting</a></li>
-								<li><a href="services-content/condo-remodeling.html">Condo Remodeling</a></li>
-								<li><a href="services-content/hardwood-flooring.html">Hardwood Flooring</a></li>
-								<li><a href="services.html">All Services</a></li>
-							</ul>
+						<li class="current-menu-item"><a href="index.html">Главная</a></li>
+						<li><a href="projects.html">Наши работы</a></li>
+						<li> <!--class="menu-item-has-children"-->
+							<a href="services.html">Услуги</a>
 						</li>
-						<li><a href="about.html">ABOUT US</a></li>
-						<li><a href="blog.html">BLOG</a></li>
-						<li><a href="shop.html">SHOP</a></li>
-						<li><a href="contact-us.html">CONTACT</a></li>
+						<li><a href="about.html">О нас</a></li>
+						<!--<li><a href="shop.html">SHOP</a></li> -->
+						<li><a href="contact-us.html">Контакты</a></li>
 					</ul>	
 				</div>
 			</div>
@@ -136,8 +129,8 @@
 					<div class="icon-box">
 						<i class="fa  fa-phone  fa-3x"></i>
 						<div class="icon-box__text">
-							<h4 class="icon-box__title">1-888-123-4567</h4>
-							<span class="icon-box__subtitle">info@buildpress.com</span>
+							<h4 class="icon-box__title">+7 (499) 394-10-76</h4>
+							<span class="icon-box__subtitle"><a href="#" onclick="AjaxFormReload()" data-toggle="modal" data-target="#myModal"><i class="fa fa-external-link-square"></i> Мы перезвоним!</a></span>
 						</div>
 					</div>
 				</div>
@@ -145,8 +138,8 @@
 					<div class="icon-box">
 						<i class="fa  fa-home  fa-3x"></i>
 						<div class="icon-box__text">
-							<h4 class="icon-box__title">227 Marion Street</h4>
-							<span class="icon-box__subtitle">Columbia, SC 29201</span>
+							<h4 class="icon-box__title">Силикатная, 19</h4>
+							<span class="icon-box__subtitle">МО, Мытищи</span>
 						</div>
 					</div>
 				</div>
@@ -154,15 +147,13 @@
 					<div class="icon-box">
 						<i class="fa  fa-clock-o  fa-3x"></i>
 						<div class="icon-box__text">
-							<h4 class="icon-box__title">Mon - Sat 8.00 - 18.00</h4>
-							<span class="icon-box__subtitle">Sunday CLOSED</span>
+							<h4 class="icon-box__title">10:00 - 22.00</h4>
+							<span class="icon-box__subtitle">Без выходных</span>
 						</div>
 					</div>
 				</div>
 				<div class="widget  widget-social-icons">	
-					<a class="social-icons__link" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-					<a class="social-icons__link" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a class="social-icons__link" href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+					<a class="social-icons__link" href="https://www.instagram.com/xmebel/" target="_blank"><i class="fa  fa-instagram"></i></a>
 				</div>	
 			</div>
 		</div>
@@ -170,14 +161,14 @@
 	
 	<div class="main-title" style="background-color: #f2f2f2">
 		<div class="container">
-			<h1 class="main-title__primary">Projects</h1>
-			<h3 class="main-title__secondary">THIS IS OUR BEST WORK</h3>
+			<h1 class="main-title__primary">Наши работы</h1>
+			<h3 class="main-title__secondary">ГОТОВЫЕ ПРОЕКТЫ</h3>
 		</div>
 	</div>
 	<div class="breadcrumbs">
 		<div class="container">
-			<span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to BuildPress." href="index.html" class="home">BuildPress</a></span>
-			<span typeof="v:Breadcrumb"><span property="v:title">Projects</span></span>	
+			<span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to BuildPress." href="index.html" class="home">X-Mebel</a></span>
+			<span typeof="v:Breadcrumb"><span property="v:title">Наши работы</span></span>	
 		</div>
 	</div>
 	<div class="master-container">
@@ -195,32 +186,28 @@
 											<div id="options" class="text-left">
 												<!-- THE FILTER BUTTONS -->
 												<ul id="filters" class="filter">
-													<li class="active"><a href="#" data-filter="*">All Projects</a></li>
-													<li><a href="#" data-filter=".filter-buildings">Buildings</a></li>
-													<li><a href="#" data-filter=".filter-interior-design">Interior Design</a></li>	
-													<li><a href="#" data-filter=".filter-isolation">Isolation</a></li>
-													<li><a href="#" data-filter=".filter-plumbing">Plumbing</a></li>									
-													<li><a href="#" data-filter=".filter-tiling">Tiling</a></li>
+													<li class="active"><a href="#" data-filter="*">Все проекты</a></li>
+													<li><a href="#" data-filter=".filter-kitchen">Кухни</a></li>
+													<li><a href="#" data-filter=".filter-wardrobe">Шкафы</a></li>	
+													<li><a href="#" data-filter=".filter-hallways">Прихожие</a></li>
+													<li><a href="#" data-filter=".filter-commercial">Торговая мебель</a></li>
 												</ul>
 											</div>
 												
 											<!-- THE GRID ITSELF WITH ENTRIES -->
 											<div id="portfolio-content" class="projects-container row">
-												<div class="project-post filter-buildings col-lg-3 col-md-4 col-sm-6 col-xs-12">
-													<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
-													<img src="images/demo/projects/3.jpg" alt="Project Image"  />
+												<div class="project-post filter-kitchen col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/1.jpg" alt="Project Image"  />
 													<div class="project-content">
 														<div class="inner-project">
-															<h3>Contemporary Villa</h3>                                    
-															<a href="images/demo/projects/big1.jpg" class="project-link" title="Contemporary Villa" data-rel="prettyPhoto[gallery]">
-																Zoom Project
+															<h3>Кухня "Классика"</h3>                                    
+															<a href="images/demo/projects/1b.jpg" class="project-link" title='Кухня "Классика"' data-rel="prettyPhoto[gallery]">
+																Увеличить
 															</a>
 														</div>	
 													</div>
-													
 												</div>
-												<div class="project-post filter-isolation col-lg-3 col-md-4 col-sm-6 col-xs-12">
-													<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+												<!--<div class="project-post filter-isolation col-lg-3 col-md-4 col-sm-6 col-xs-12">
 													<img src="images/demo/projects/1.jpg" alt="Project Image" />
 													<div class="project-content">
 														<div class="inner-project">
@@ -228,68 +215,190 @@
 															<a href="projects-single.html" class="project-link">View Project</a>
 														</div>	
 													</div>
+												</div>-->
+												<div class="project-post filter-kitchen col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/2.jpg" alt="Project Image"  />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Кухня "Эстет"</h3>                                    
+															<a href="images/demo/projects/2b.jpg" class="project-link" title='Кухня "Эстет"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
 												</div>
-												<div class="project-post filter-buildings filter-interior-design col-lg-3 col-md-4 col-sm-6 col-xs-12">
-													<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
+												<div class="project-post filter-kitchen col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/3.jpg" alt="Project Image"  />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Кухня "Маэстро"</h3>                                    
+															<a href="images/demo/projects/3b.jpg" class="project-link" title='Кухня "Маэстро"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												
+												
+												
+												<div class="project-post filter-kitchen col-lg-3 col-md-4 col-sm-6 col-xs-12">
 													<img src="images/demo/projects/4.jpg" alt="Project Image"  />
 													<div class="project-content">
 														<div class="inner-project">
-															<h3>Villa Rustica Renovation</h3>                                    
-															<a href="images/demo/projects/big1.jpg" class="project-link" title="Villa Rustica Renovation" data-rel="prettyPhoto[gallery]">
-																Zoom Project
+															<h3>Кухня "Классика"</h3>                                    
+															<a href="images/demo/projects/4b.jpg" class="project-link" title='Кухня "Классика"' data-rel="prettyPhoto[gallery]">
+																Увеличить
 															</a>
 														</div>	
 													</div>
 												</div>
-												<div class="project-post filter-isolation filter-plumbing col-lg-3 col-md-4 col-sm-6 col-xs-12">
-													<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
-													<img src="images/demo/projects/6.jpg" alt="Project Image" />
-													<div class="project-content">
-														<div class="inner-project">
-															<h3>Pool In Luxury Neighbourhood</h3>                                    
-															<a href="projects-single.html" class="project-link">View Project</a>
-														</div>	
-													</div>
-												</div>
-												<div class="project-post filter-buildings filter-tiling col-lg-3 col-md-4 col-sm-6 col-xs-12">
-													<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
-													<img src="images/demo/projects/2.jpg" alt="Project Image" />
-													<div class="project-content">
-														<div class="inner-project">
-															<h3>House of Cards</h3>                                    
-															<a href="images/demo/projects/big1.jpg" class="project-link" title="House of Cards" data-rel="prettyPhoto[gallery]">
-																Zoom Project
-															</a>
-														</div>	
-													</div>
-												</div>
-												<div class="project-post filter-isolation filter-plumbing col-lg-3 col-md-4 col-sm-6 col-xs-12">
-													<!-- THE CONTAINER FOR THE MEDIA AND THE COVER EFFECTS -->
-													<img src="images/demo/projects/8.jpg" alt="Project Image"  />
-													<div class="project-content">
-														<div class="inner-project">
-															<h3>Green School</h3>                                    
-															<a href="projects-single.html" class="project-link">View Project</a>
-														</div>	
-													</div>
-												</div>
-												<div class="project-post filter-buildings col-lg-3 col-md-4 col-sm-6 col-xs-12">
+												<div class="project-post filter-kitchen col-lg-3 col-md-4 col-sm-6 col-xs-12">
 													<img src="images/demo/projects/5.jpg" alt="Project Image"  />
 													<div class="project-content">
 														<div class="inner-project">
-															<h3>House Under The Palms</h3>                                    
-															<a href="images/demo/projects/big1.jpg" class="project-link" title="House Under The Palms" data-rel="prettyPhoto[gallery]">
-																Zoom Project
+															<h3>Кухня "Античность"</h3>                                    
+															<a href="images/demo/projects/5b.jpg" class="project-link" title='Кухня "Античность"' data-rel="prettyPhoto[gallery]">
+																Увеличить
 															</a>
 														</div>	
 													</div>
 												</div>
-												<div class="project-post filter-isolation col-lg-3 col-md-4 col-sm-6 col-xs-12">
-													<img src="images/demo/projects/7.jpg" alt="Project Image" />
+												<div class="project-post filter-kitchen col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/6.jpg" alt="Project Image"  />
 													<div class="project-content">
 														<div class="inner-project">
-															<h3>Kitchen And Living Room</h3>                                    
-															<a href="projects-single.html" class="project-link">View Project</a>
+															<h3>Кухня "Модерн"</h3>                                    
+															<a href="images/demo/projects/6b.jpg" class="project-link" title='Кухня "Модерн"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												<div class="project-post filter-kitchen col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/7.jpg" alt="Project Image"  />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Кухня "Chocolate"</h3>                                    
+															<a href="images/demo/projects/7b.jpg" class="project-link" title='Кухня "Chocolate"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												
+												
+												<div class="project-post filter-wardrobe col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/w/1.jpg" alt="Project Image" />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Шкаф "Элит"</h3>                                    
+															<a href="images/demo/projects/w/1b.jpg" class="project-link" title='Шкаф "Элит"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												
+												<div class="project-post filter-wardrobe col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/w/2.jpg" alt="Project Image" />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Шкаф "Нежность"</h3>                                    
+															<a href="images/demo/projects/w/2b.jpg" class="project-link" title='Шкаф "Нежность"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												<div class="project-post filter-wardrobe col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/w/3.jpg" alt="Project Image" />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Шкаф "Нео"</h3>                                    
+															<a href="images/demo/projects/w/3b.jpg" class="project-link" title='Шкаф "Нео"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												<div class="project-post filter-wardrobe col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/w/4.jpg" alt="Project Image" />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Шкаф "Мастер"</h3>                                    
+															<a href="images/demo/projects/w/4b.jpg" class="project-link" title='Шкаф "Мастер"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												
+												
+												<div class="project-post filter-hallways col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/h/1.jpg" alt="Project Image"  />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Прихожая "Простор"</h3>                                    
+															<a href="images/demo/projects/h/1b.jpg" class="project-link" title='Прихожая "Простор"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												<div class="project-post filter-hallways col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/h/2.jpg" alt="Project Image"  />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Прихожая "Элегант"</h3>                                    
+															<a href="images/demo/projects/h/2b.jpg" class="project-link" title='Прихожая "Элегант"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												<div class="project-post filter-hallways col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/h/3.jpg" alt="Project Image"  />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Прихожая "Тропикана"</h3>                                    
+															<a href="images/demo/projects/h/3b.jpg" class="project-link" title='Прихожая "Тропикана"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												<div class="project-post filter-hallways col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/h/4.jpg" alt="Project Image"  />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Прихожая "Гаваи"</h3>                                    
+															<a href="images/demo/projects/h/4b.jpg" class="project-link" title='Прихожая "Гаваи"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												
+												
+												<div class="project-post filter-commercial col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/c/1.jpg" alt="Project Image"  />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Витрины "Островок"</h3>                                    
+															<a href="images/demo/projects/c/1b.jpg" class="project-link" title='Витрины "Островок"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
+														</div>	
+													</div>
+												</div>
+												<div class="project-post filter-commercial col-lg-3 col-md-4 col-sm-6 col-xs-12">
+													<img src="images/demo/projects/c/2.jpg" alt="Project Image"  />
+													<div class="project-content">
+														<div class="inner-project">
+															<h3>Витрины "Сапожок"</h3>                                    
+															<a href="images/demo/projects/c/2b.jpg" class="project-link" title='Витрины "Сапожок"' data-rel="prettyPhoto[gallery]">
+																Увеличить
+															</a>
 														</div>	
 													</div>
 												</div>
@@ -305,57 +414,44 @@
 			</div>
 		</div><!-- /container -->
 	</div>
+	
 	<footer>
 		<div class="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-4">
 						<div class="widget  widget_text  push-down-30">
-							<h6 class="footer__headings">ABOUT US</h6>	
+							<h6 class="footer__headings">О нас</h6>	
 							<div class="textwidget">
-								<img src="images/logo_footer.png" alt="Footer Logo" width="218" height="45" />
+								<img src="images/logo_footer.png" alt="Footer Logo" width="218" />
 								<br><br>
-								Our construction management professionals organize, lead and manage the people, materials and processes of 
-								truction utilizing construction management professionals.
+								Мы осуществляем проектирование и производство мебели различного назначения, как бытового, так и коммерческого. У нас Вы можете заказать кухню, гостиную, прихожую, гардеробную, торговую мебель.
 								<br><br>
-								<strong><a href="#" class="read-more" target="_blank">READ MORE</a></strong>
+								<strong><a href="about.html" class="read-more">Подробнее о нас</a></strong>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-12  col-md-4">
 						<div class="widget  widget_nav_menu  push-down-30">
-							<h6 class="footer__headings">NAVIGATION</h6>
+							<h6 class="footer__headings">Карта сайта</h6>
 							<div class="menu-top-menu-container">
 								<ul id="menu-top-menu-1" class="menu">
-									<li><a href="extras.html">Extras</a>
-										<ul class="sub-menu">
-											<li><a href="shortcodes.html">Shortcodes</a></li>
-											<li><a href="tables.html">Tables</a></li>
-											<li><a href="brochure-box.html">Brochure Box</a></li>
-										</ul>
-									</li>
-									<li><a href="alternative-page.html">Alternative Pages</a>
-										<ul class="sub-menu">
-											<li><a href="shop-front.html">Home for Shop</a></li>
-											<li><a href="contact-multiple-locations.html">Multiple Contacts</a></li>
-											<li><a href="team-contact-combined.html">Team &#038; Contact</a></li>
-										</ul>
-									</li>
-									<li>
-										<a target="_blank" href="http://www.weblusive-themes.com/buildpress/documentation">Online Documentation</a>
-									</li>
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="projects.html">Наши работы</a></li>
+									<li><a href="services.html">Услуги</a></li>
+									<li><a href="about.html">О нас</a></li>
+									<li><a href="contact-us.html">Контакты</a></li>
 								</ul>
 							</div>
 						</div>
 					</div>
 					<div class="col-xs-12  col-md-4">
 						<div class="widget  widget_text  push-down-30">
-							<h6 class="footer__headings">BUY NOW</h6>	
+							<h6 class="footer__headings">Сделать заказ</h6>	
 							<div class="textwidget">
-								If you come all the way down here, you probably really like our BuildPress theme. To save you all the 
-								troubles finding where to buy this theme, we have a solution for that too. Just click the button below.
+								Наши менеджеры готовы проконсультировать Вас. Вы можете оставить заявку на обратный звонок.
 								<br><br>
-								<a class="btn  btn-primary" href="#" target="_blank">BUY NOW</a>
+								<a class="btn  btn-primary" href="#" onclick="AjaxFormReload()" data-toggle="modal" data-target="#myModal">Обратный звонок</a>
 							</div>
 						</div>
 					</div>	
@@ -365,10 +461,10 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="footer-bottom__left">
-					BuildPress Theme by <a href="#" target="_blank">ProteusThemes</a>	
+					<a href="http://X-MEBEL.ORG">X-MEBEL.ORG</a>
 				</div>
 				<div class="footer-bottom__right">
-					&copy; 1896 - 2014 <strong>BuildPress, LCC</strong>. All rights reserved.	
+					&copy; 2016 <strong>X-MEBEL</strong>. All rights reserved.	
 				</div>
 			</div>
 		</div>
@@ -383,6 +479,8 @@
 <script type="text/javascript" src="js/simplemap.js"></script>
 <script type="text/javascript" src="js/main.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
