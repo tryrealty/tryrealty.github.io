@@ -8,7 +8,7 @@ function random(min,max){
 function dropBox(){
   var length = random(100, ($(".game").width() - 100));
   var velocity = random(5000, 7000);
-  var size = random(20, 100);
+  var size = random(50, 100);
   var thisBox = $("<div/>", {
     class: "box",
     style:  "width:" +size+ "px; height:"+size+"px; left:" + length+  "px; transition: transform " +velocity+ "ms linear;"
