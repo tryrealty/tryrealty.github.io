@@ -1,0 +1,23 @@
+.game {
+  background: #efefef;
+  width: 110%;
+  height: 110%;
+  position: fixed;
+  top: -10px;
+  left: -10px;
+  overflow: hidden;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -150px;
+  transition: transform 1.5s linear;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.move {
+  transform: translateY(120vh);
+}
