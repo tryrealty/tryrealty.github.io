@@ -86,7 +86,7 @@ nav {
   display: flex;
   flex-direction: row;
   /* width: 100%; */
-  height: 1000px;
+  /* height: 1000px; */
 }
 
 .flex_art_item1 {
@@ -229,4 +229,30 @@ nav {
 
 
 
+.flex_article2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex2_art_item {
+  flex: 2;
+  width: 400px;
+  /* padding-left: 30%; */
+  margin: 0px 20px 0px 100px;
+  /* border: 2px solid #f00; */
+  
+}
+
+.flex2_art_item p {
+	margin-bottom: 1em;
+	  
+	line-height: 24px;
+	font-size: 20px;
+}
+
+.block2 {
+	width: 750px;
+	margin: auto;
+	/* margin-right: 0em; */
+}
 
