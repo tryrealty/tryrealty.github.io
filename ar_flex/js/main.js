@@ -5,3 +5,17 @@ $('a[href*="#"]').click(function() {
     }, 400);
     return false;
 });
+
+
+jQuery("#child2").draggable({ 
+    cursor: "move", 
+    // containment: "parent",
+	axis: "x",
+    stop: function() {
+      if(jQuery("#child2").position().left < -1300)
+          jQuery("#child2").css("left", "-1300px");
+	  
+      else if(jQuery("#child2").position().left > 150)
+          jQuery("#child2").css("left", "150px");
+    }
+});

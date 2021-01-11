@@ -573,17 +573,63 @@ nav {
 
 
 #projects {
-	
+	overflow:hidden;
 	padding-top: 55px;
 	margin-top: -55px;
 }
 
 .flex_article5 {
 	display: flex;
-	width: 100%;
+	justify-content: left;
+	width: 2000px;
 	flex-direction: row;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
+	padding-left: 100px;
 }
+
+#child {
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+	/* margin: 0 auto; */
+	/* left: -2000px; */
+}
+
+
+#child2 {
+	/* position: relative; */
+	/* left: 2000px; */
+	/* margin: 0 auto; */
+}
+
+.parent {
+	/* width: 3000px; */
+	/* position: relative; */
+	/* left: -1500px; */
+	/* overflow-x: hidden; */
+	cursor: w-resize;
+	
+}
+
+/* .child-container { */
+	/* width: 730px; */
+	/* left: -710px; */
+	/* position: relative; */
+/* } */
+
+/* #child { */
+	/* width: 100%; */
+	/* float: left; */
+	/* font-size: 15px; */
+	/* font-family: arial; */
+	/* padding: 10px 5px 10px 0; */
+	/* left: 720px; */
+/* } */
+/* .clear {clear:both;} */
+
+
+
+
 
 .flex_article5_h1 {
 	width: 100%;
@@ -602,6 +648,7 @@ nav {
 	
 	margin-bottom: 36px;
 }
+
 
 
 
@@ -624,7 +671,14 @@ nav {
 .flex5_art_list p:nth-child(3) {
 	margin: 0 10px 15px 15px;
 	font-size: 16px;
+	height: 30px;
 }
+
+.flex5_art_list a {
+	text-decoration: none;
+	color: black;
+}
+
 
 .button_recent {
 	margin: 25px auto;
@@ -634,10 +688,29 @@ nav {
 	text-transform: uppercase;
 	width: 156px;
 	height: 38px;
-	border: 1px solid #D697FD;
+	border: 1px solid;
 	border-radius: 24px;
 	font-weight: bold;
 }
+
+
+
+.border_blue {
+	border-color: rgba(155, 151, 253,1);
+}
+
+.border_fiol {
+	border-color: rgba(214, 151, 253,1);
+}
+
+.border_orange {
+	border-color: rgba(255, 213, 145,1);
+}
+
+.border_green {
+	border-color: rgba(41, 206, 129,1);
+}
+
 
 
 
