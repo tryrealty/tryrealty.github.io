@@ -19,3 +19,24 @@ jQuery("#child2").draggable({
           jQuery("#child2").css("left", "150px");
     }
 });
+
+
+
+let elementsArray = document.querySelectorAll(".open-modal");
+
+elementsArray.forEach(function(elem) {
+    elem.addEventListener("click", function() {
+		document.querySelector("#modal-container").style.display = 'block';
+		document.querySelector("body").style.overflow = 'hidden';
+    });
+});
+
+// document.querySelector(".open-modal").addEventListener('click', function() {
+    // document.querySelector("#modal-container").style.display = 'block';
+    // document.querySelector("body").style.overflow = 'hidden';
+// });
+
+document.querySelector("#close-modal").addEventListener('click', function() {
+    document.querySelector("#modal-container").style.display = 'none';
+    document.querySelector("body").style.overflow = 'visible';
+});
