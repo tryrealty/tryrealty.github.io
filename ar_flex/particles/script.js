@@ -7,10 +7,18 @@ function random(min,max){
 function dropBox(){
   var length = random(10, ($(".contact_form").width() - 100));
   var velocity = random(5000, 7000);
+  
+  //insert gift element
+if (document.querySelector("#contact_form").style.display == 'block') {
   var size = random(50, 100);
+} else {
+  var size = random(20, 60);
+  }
+  
   var thisBox = $("<div/>", {
     class: "box",
-    style:  "width:" +size+ "px; height:"+size+"px; left:" + length+  "px; transition: transform " +velocity+ "ms linear;"
+    // style:  "width:" +size+ "px; height:"+size+"px; left:" + length+  "px; opacity: 1; transition: transform " +velocity+ "ms linear,  opacity 2s linear;"
+    style:  "width:" +size+ "px; height:"+size+"px; left:" + length+ "px; opacity: 1; transition: transform " +velocity+ "ms linear;"
   });
   
   //set data and bg based on data
@@ -42,7 +50,7 @@ function dropBox(){
 if (document.querySelector("#contact_form").style.display == 'block') {
 	$(".contact_form").append(thisBox);
 } else {
-	if ($(".contact_form").width() < 730) $(".flex_article1").append(thisBox);
+	if ($(".contact_form").width() < 730) $(".particles").append(thisBox);
   }
   
   //random start for animation
@@ -78,7 +86,7 @@ var runGame = setInterval(function(){
                 for (i = 0; i < 10; i++) { 
                   dropBox();
                 }  
-              }, 1000);
+              }, 3000);      //////////// КОЛИЧЕСТВО
 
 function countdown() {
 	    function tick() {
