@@ -7,21 +7,6 @@ $('a[href*="#"]').click(function() {
 });
 
 
-jQuery("#child2").draggable({ 
-    cursor: "w-resize", 
-	  scroll: true,
-	  scrollSensitivity: 100,
-	    scrollSpeed: 100,
-    // containment: "parent",
-	axis: "x",
-    stop: function() {
-      if(jQuery("#child2").position().left < -1300)
-          jQuery("#child2").css("left", "-1300px");
-	  
-      else if(jQuery("#child2").position().left > 150)
-          jQuery("#child2").css("left", "150px");
-    }
-});
 
 
 
@@ -30,17 +15,69 @@ let elementsArray = document.querySelectorAll(".open-modal");
 elementsArray.forEach(function(elem) {
     elem.addEventListener("click", function() {
 		document.querySelector("#contact_form").style.display = 'block';
-		// document.querySelector("#modal-container").style.overflow = 'visible';
 		document.querySelector("body").style.overflow = 'hidden';
     });
 });
 
-// document.querySelector(".open-modal").addEventListener('click', function() {
-    // document.querySelector("#modal-container").style.display = 'block';
-    // document.querySelector("body").style.overflow = 'hidden';
-// });
 
 document.querySelector("#close-modal").addEventListener('click', function() {
     document.querySelector("#contact_form").style.display = 'none';
     document.querySelector("body").style.overflow = 'visible';
 });
+
+
+
+
+
+
+
+// target elements with the "draggable" class
+interact('#child2')
+  .draggable({
+    // enable inertial throwing
+    inertia: true,
+    // keep the element within the area of it's parent
+    modifiers: [
+      interact.modifiers.restrictRect({
+        restriction: 'parent',
+        endOnly: true
+      })
+    ],
+    // enable autoScroll
+    autoScroll: true,
+
+    listeners: {
+      // call this function on every dragmove event
+      move: dragMoveListener,
+
+      // call this function on every dragend event
+      end (event) {
+        var textEl = event.target.querySelector('p')
+
+        textEl && (textEl.textContent =
+          'moved a distance of ' +
+          (Math.sqrt(Math.pow(event.pageX - event.x0, 2) +
+                     Math.pow(event.pageY - event.y0, 2) | 0))
+            .toFixed(2) + 'px')
+      }
+    }
+  })
+
+function dragMoveListener (event) {
+  var target = event.target
+  // keep the dragged position in the data-x/data-y attributes
+  var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx
+  // var y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy
+
+  // translate the element
+  target.style.webkitTransform =
+    target.style.transform =
+      'translate(' + x + 'px)'
+
+  // update the posiion attributes
+  target.setAttribute('data-x', x)
+  // target.setAttribute('data-y', y)
+}
+
+// this function is used later in the resizing and gesture demos
+window.dragMoveListener = dragMoveListener
