@@ -1,11 +1,11 @@
-var score = 0;
+// var score = 0;
 
 function random(min,max){
  	return Math.round(Math.random() * (max-min) + min);
 }
 
 function dropBox(){
-  var length = random(10, ($(".contact_form").width() - 10));
+  var length = random(10, ($(".contact_form").width() - 100));
   var velocity = random(5000, 7000);
   var size = random(50, 100);
   var thisBox = $("<div/>", {
@@ -39,7 +39,11 @@ function dropBox(){
   
   
   //insert gift element
-  $(".contact_form").append(thisBox);
+if (document.querySelector("#contact_form").style.display == 'block') {
+	$(".contact_form").append(thisBox);
+} else {
+	if ($(".contact_form").width() < 730) $(".flex_article1").append(thisBox);
+  }
   
   //random start for animation
   setTimeout(function(){
@@ -60,13 +64,13 @@ for (i = 0; i < 10; i++) {
 $(document).on('click', '.box', function(){
 
   
-  if($(this).data("test")){
-    score += 1;
-  } else {
-    score -= 1;
-  }
+  // if($(this).data("test")){
+    // score += 1;
+  // } else {
+    // score -= 1;
+  // }
   
-  $(".score").html(score);
+  // $(".score").html(score);
   $(this).remove();
 });
 

@@ -26,7 +26,8 @@ let elementsArray = document.querySelectorAll(".open-modal");
 
 elementsArray.forEach(function(elem) {
     elem.addEventListener("click", function() {
-		document.querySelector("#modal-container").style.display = 'block';
+		document.querySelector("#contact_form").style.display = 'block';
+		// document.querySelector("#modal-container").style.overflow = 'visible';
 		document.querySelector("body").style.overflow = 'hidden';
     });
 });
@@ -37,6 +38,6 @@ elementsArray.forEach(function(elem) {
 // });
 
 document.querySelector("#close-modal").addEventListener('click', function() {
-    document.querySelector("#modal-container").style.display = 'none';
+    document.querySelector("#contact_form").style.display = 'none';
     document.querySelector("body").style.overflow = 'visible';
 });
