@@ -1195,14 +1195,34 @@ nav {
 	
 	
 		
-	@media screen and (max-width: 550px) {
+	@media screen and (max-width: 600px) {
 			
+				
+		.button_first {
+			width: 100%;
+		}
+		
+		.flex3_art_list5 {
+			font-size: 17px;
+			width: 350px;
+		}	
 			
+			.flex3_art_list6 {
+				width: 350px;
+			}
+			.flex3_art_item2 {
+				min-width: 400px;
+			}
 			
+			.flex_article4 {
+				max-width: 350px;
+			}
 			
-			
-			
-			
+			/* .flex4_art_item img { */
+				/* max-width: 160px; */
+			/* } */
+
+
 	}
 	
 	

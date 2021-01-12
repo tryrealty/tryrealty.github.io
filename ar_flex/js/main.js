@@ -8,7 +8,10 @@ $('a[href*="#"]').click(function() {
 
 
 jQuery("#child2").draggable({ 
-    cursor: "move", 
+    cursor: "w-resize", 
+	  scroll: true,
+	  scrollSensitivity: 100,
+	    scrollSpeed: 100,
     // containment: "parent",
 	axis: "x",
     stop: function() {
