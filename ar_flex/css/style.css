@@ -76,7 +76,7 @@ body {
     top: 0;
     left: 0;
     display: none;
-	z-index: 9000;
+	z-index: 100000;
 	overflow: hidden;
 }
 
@@ -802,7 +802,7 @@ nav {
 .flex_article5 {
 	display: flex;
 	justify-content: left;
-	width: 2000px;
+	width: 2500px;
 	flex-direction: row;
 	/* overflow-x: hidden; */
 	/* padding-left: 100px; */
