@@ -44,10 +44,29 @@ body {
 
 
 .particles {
-    position: relative;
-	z-index: 0;
+    position: absolute;
+	top: 0px;
+	z-index: 5;
+	height: 800px;
+	width: 100%;
+	overflow: hidden;
 }
 
+.particles_container {
+    position: absolute;
+	top: 0px;
+	z-index: 9;
+	height: 820px;
+	width: 100%;
+	overflow: hidden;
+	/* background-image: url(../img/gradRed.png); */
+	/* background-size: 100% 100%; */
+    /* background-repeat: no-repeat; */
+}
+
+/* .particles_container { */
+	
+/* } */
 
 #contact_form {
     position: fixed;
@@ -334,12 +353,12 @@ nav {
 .flex_article1 {
 	display: flex;
 	flex-direction: row;
-	position: relative;
-	z-index: 5;
 }
 
 .flex_art_item1 {
 	flex: 3;
+	position: relative;
+	z-index: 10;
 }
 
 .block {
@@ -366,6 +385,11 @@ nav {
   /* margin: 40px 100px 0px 20px; */
 }
 
+
+.flex_art_item2 img {
+	position: relative;
+	z-index: 0;
+}
 
 	
 		#nav ul {
@@ -445,7 +469,7 @@ nav {
 	align-items: center;
 	margin-top: 50px;
 	position: relative;
-	z-index: 5;
+	z-index: 10;
 }
 
 .flex2_art_item {
@@ -1025,22 +1049,22 @@ nav {
 	/* line-height: 25px; */
 /* } */
 
-.button_gotop {
-	position: relative;
-	width: 100%;
-	height: 0px;
-	top: -45px;
-	/* top: 20px; */
-	text-align: right;
-	/* margin-right: 0px; */
-	/* margin-left: auto; */
-	/* bottom: 1px; */
-	/* right: 1px; */
-}
+/* .button_gotop { */
+	/* position: relative; */
+	/* width: 100%; */
+	/* height: 0px; */
+	/* top: -45px; */
+	/* /* top: 20px; */
+	/* text-align: right; */
+	/* /* margin-right: 0px; */
+	/* /* margin-left: auto; */
+	/* /* bottom: 1px; */
+	/* /* right: 1px; */
+/* } */
 
 .footer_icon {
 	height: 25px;
-	margin: 0px 15px 0px 30px;
+	margin: 0px 0px 0px 30px;
 }
 
 
@@ -1238,6 +1262,7 @@ nav {
 				
 		.button_first {
 			width: 100%;
+			min-width: 220px;
 		}
 		
 		.flex3_art_list5 {

@@ -5,7 +5,7 @@ function random(min,max){
 }
 
 function dropBox(){
-  var length = random(10, ($(".contact_form").width() - 100));
+  var length = random(10, ($(".contact_form").width() - 80));
   var velocity = random(5000, 7000);
   
   //insert gift element
@@ -18,7 +18,8 @@ if (document.querySelector("#contact_form").style.display == 'block') {
   var thisBox = $("<div/>", {
     class: "box",
     // style:  "width:" +size+ "px; height:"+size+"px; left:" + length+  "px; opacity: 1; transition: transform " +velocity+ "ms linear,  opacity 2s linear;"
-    style:  "width:" +size+ "px; height:"+size+"px; left:" + length+ "px; opacity: 1; transition: transform " +velocity+ "ms linear;"
+    style:  "width:" +size+ "px; height:"+size+"px; left:" + length+ "px; transition: transform " +velocity+ "ms linear;"
+    // style:  "width:" +size+ "px; height:"+size+"px; left:" + length+ "px; opacity: 1; transition: opacity " +velocity+ "ms linear;"
   });
   
   //set data and bg based on data
@@ -50,7 +51,8 @@ if (document.querySelector("#contact_form").style.display == 'block') {
 if (document.querySelector("#contact_form").style.display == 'block') {
 	$(".contact_form").append(thisBox);
 } else {
-	if ($(".contact_form").width() < 730) $(".particles").append(thisBox);
+	$(".particles").append(thisBox);
+	// if ($(".contact_form").width() < 730) $(".particles").append(thisBox);
   }
   
   //random start for animation
