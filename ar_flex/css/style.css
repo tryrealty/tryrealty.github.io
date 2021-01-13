@@ -72,7 +72,7 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(244, 233, 251, 1);
+    background-color: rgba(244, 233, 251, 0.95);
     top: 0;
     left: 0;
     display: none;
@@ -272,18 +272,24 @@ nav {
 
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-  nav {
-	background-color: rgba(255,255,255, 0.7);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
+	nav {
+		background-color: rgba(255,255,255, 0.7);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
   
   
-  .form {
-	background-color: rgba(255,255,255, 0.7);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
+	.form {
+		background-color: rgba(255,255,255, 0.7);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
+  
+	#contact_form {
+		background-color: rgba(244, 233, 251, 0.7);
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+	}
   
 }
 
@@ -758,6 +764,7 @@ nav {
 	position: relative;
 	width: 50vmin;
 	top: -50px;
+	left: -25px;
 }
 
 
@@ -769,12 +776,14 @@ nav {
 	text-align: right;
 	/* height: 150px; */
 	z-index: -99;
+	overflow: hidden;
 }
 
 
 .wind2 img {
 	position: relative;
 	width: 50vmin;
+	right: -25px;
 }
 
 
@@ -784,6 +793,7 @@ nav {
 	text-align: left;
 	height: 70px;
 	z-index: -99;
+	left: -25px;
 }
 
 
@@ -939,7 +949,7 @@ nav {
 .flex_article6 {
 	display: flex;
 	flex-direction: row;
-	margin: 0 auto;
+	margin: 0 auto 80px auto;
 	max-width: 900px;
 	text-align: center;
 	font-size: 16px;
@@ -980,7 +990,7 @@ nav {
 	border-top: 2px solid #ddd;
 	text-align: center;
 	/* height: 25px; */
-	margin-top: 80px;
+	/* margin-top: 80px; */
 	padding: 5px 5px 8px 5px;
 }
 .prefooter p {
@@ -1304,7 +1314,8 @@ nav {
 		flex: 1;
 		display: flex;
 		flex-direction: row;
-		/* position: relative; */
+		position: relative;
+		z-index: 2;
 		/* top: 50px; */
 		max-width: 1000px;
 		/* justify-content: center; */
@@ -1314,36 +1325,51 @@ nav {
 	}
 	
 	
-	.filter_preview_block1 h1 {
-		font-weight: bold;
+		.filter_preview_block1 h1 {
+			font-weight: bold;
+		}
+		
+		.filter_preview_block1 p {
+			font-size: 20px;
+			font-weight: 400;
+			margin: 0 80px 15px 0;
+		}
+		
+		.filter_preview_block1 div:first-child {
+			/* display: flex; */
+			/* flex-direction: row; */
+			/* position: relative; */
+			/* top: 50px; */
+			/* max-width: 800px; */
+			/* justify-content: center; */
+			/* align-items: center; */
+			margin: 50px 30px;
+		}
+		
+		.filter_preview_block1 div:first-child img {
+			width: 50px;
+			height: 50px;
+			 transform: scaleX(-1);
+		}
+		
+		
+		.filter_preview_block1 div:nth-child(2) {
+			width: 600px;
+			margin-right: 50px;
+		}
+		
+		.filter_preview_block1 div:last-child {
+			width: 350px;
+		}
+	
+	.filter_preview_block2_bgcolor {
+		height: 100%;
+		width: 100%;
+		background-color:  #6C40FF;
+		text-align: right;
 	}
 	
-	.filter_preview_block1 p {
-		font-size: 20px;
-		font-weight: 400;
-		margin: 0 80px 15px 0;
-	}
 	
-	.filter_preview_block1 div:first-child {
-		/* display: flex; */
-		/* flex-direction: row; */
-		/* position: relative; */
-		/* top: 50px; */
-		/* max-width: 800px; */
-		/* justify-content: center; */
-		/* align-items: center; */
-		margin: 50px 30px;
-	}
-	
-	.filter_preview_block1 div:first-child img {
-		width: 50px;
-		height: 50px;
-		 transform: scaleX(-1);
-	}
-	
-	.filter_preview_block1 div:last-child {
-		width: 250px;
-	}
 	
 	.filter_preview_block2 {
 		flex: 1;
@@ -1354,22 +1380,69 @@ nav {
 		height: 100%;
 		width: 100%;
 		margin: 0 auto;
+		padding-top: 40px;
 	}
 	
+	
+
+
+
+	.wind4 {
+		position: relative;
+		top: -80px;
+		width: 50vmin;
+		margin-left: auto;
+		margin-right: 0px;
+		overflow: hidden;
+	}
+	
+	
+	.wind4 img {
+		position: relative;
+		right: -25px;
+		z-index: 999;
+		width: 50vmin;
+	}
+	
+	
+	.filter_preview_block2 img {
+		filter: brightness(0) invert(1);
+		float: left;
+		height: 56px;
+		margin-right: 20px;
+	}
 	
 	.filter_preview_block2 div:first-child {
 		min-width: 110px;
 		height: 50px;
 	}
 	
-	.filter_preview_block1 div:last-child {
-		width: 250px;
+		
+	.filter_preview_block2 div:nth-child(2) {
+		width: 600px;
+		margin-right: 50px;
+	}
+	
+	.filter_preview_block2 div:last-child {
+		width: 350px;
 	}
 	
 	.filter_preview_block2 p {
+		color: white;
 		font-size: 20px;
 		font-weight: 400;
-		margin: 40px 80px 0px 0;
+		margin: 0px 80px 15px 0px;
+		text-align: left;
+	}
+	
+	.border_white {
+		border: 1px solid white;
+	}
+	
+	.open-modal {
+		/* position: relative; */
+		/* z-index: 9999999; */
+		text-decoration: none;
 	}
 	
 	
