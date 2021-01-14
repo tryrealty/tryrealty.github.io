@@ -362,7 +362,7 @@ nav {
 }
 
 .flex_art_item1 {
-	flex: 3;
+	flex: 4;
 	position: relative;
 	z-index: 10;
 }
@@ -386,7 +386,7 @@ nav {
 
 .flex_art_item2 {
 	/* border: 1px solid #00f; */
-	flex: 2;
+	flex: 3;
 	width: 400px;
   /* margin: 40px 100px 0px 20px; */
 }
@@ -1348,7 +1348,7 @@ nav {
 		
 		.filter_preview_block1 div:first-child img {
 			position: relative;
-			top: 15px;
+			top: 12px;
 			width: 50px;
 			height: 50px;
 			transform: scaleX(-1);
@@ -1374,7 +1374,7 @@ nav {
 	.filter_preview_block2_bgcolor {
 		height: 500px;
 		width: 100%;
-		background-color:  #6C40FF;
+		/* background-color:  #6C40FF; */
 		text-align: right;
 	}
 	
@@ -1385,7 +1385,7 @@ nav {
 		display: flex;
 		flex-direction: row;
 		max-width: 920px;
-		background-color: #6C40FF;
+		/* background-color: #6C40FF; */
 		/* height: 100%; */
 		/* width: 100%; */
 		margin: 0 auto;
@@ -1445,6 +1445,10 @@ nav {
 	
 	.border_white {
 		border: 1px solid white;
+	}
+	
+	.border_black {
+		border: 1px solid black;
 	}
 	
 	.open-modal {
