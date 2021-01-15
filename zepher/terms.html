@@ -1,143 +1,427 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Zepher - Fun Mask Filter</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" type="image/png" href="img/min/favicon-192-min.png" sizes="192x192">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/simplebar.css" />
-		
-		<noscript>
-		  <style>
+
+<head>
+	<title>Zepher - Fun Mask Filter</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/png" href="img/min/favicon-192-min.png" sizes="192x192">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/simplebar.css" />
+	<noscript>
+		<style>
 			/**
 			* Reinstate scrolling for non-JS clients
 			*/
 			.simplebar-content-wrapper {
-			  overflow: auto;
+			 overflow: auto;
 			}
-		  </style>
-		</noscript>
+		</style>
+	</noscript>
+</head>
 
-
-	</head>
-	<body>
-		<div class="filter_preview_top">
-				<a href="./index.html"><img src="img/logo.png" /></a>
-		</div>
-			
-		<div class="term">	
-			<div class="term_block1">
-				<div>
-					
-					<!-- <div> -->
-						<h1><a href="./index.html"><img src="img/min/button-arrow1-min.png" style="filter: brightness(0)" /></a>Terms & conditions</h1>
-					<!-- </div> -->
-				</div>
-			</div>
-			
-			<div class="">
-				<div class="text_term1"  data-simplebar>
-					<div class="term1_content">
-						<h2>Terms of Service</h2>
-						OVERVIEW<br/><br/>This website is operated by Zepher. Throughout the site, the terms “we”, “us” and “our” refer to Zepher. Zepher offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.<br/><br/>By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/ or contributors of content.<br/><br/>Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services. If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service.<br/><br/>Any new features or tools, which are added to, the current website, application or plugin shall also be subject to the Terms of Service. You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update, change or replace any part of these Terms of Service by posting updates and/or changes to our website application or plugin. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website application or plugin following the posting of any changes constitutes acceptance of those changes.<br/><br/>Our website, application and plugin is hosted on Heroku. They provide us with the online platform that allows us to sell our services to you.<br/><br/><br/>SECTION 1 - ONLINE STORE TERMS<br/><br/>By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence, or that you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site.<br/><br/>You may not use our products for any illegal or unauthorized purpose nor may you, in the use of the Service, violate any laws in your jurisdiction (including but not limited to copyright laws).<br/><br/>You must not transmit any worms or viruses or any code of a destructive nature.
-						<br/>
-						<br/>
-						A breach or violation of any of the Terms will result in an immediate termination of your Services.<br/><br/><br/>SECTION 2 - GENERAL CONDITIONS<br/><br/>We reserve the right to refuse service to anyone for any reason at any time.<br/><br/>You understand that your content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information is always encrypted during transfer over networks.<br/><br/>You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us.<br/><br/>The headings used in this agreement are included for convenience only and will not limit or otherwise affect these Terms.<br/><br/><br/>SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION<br/><br/>We are not responsible if information made available on this site is not accurate, complete or current. The material on this site is provided for general information only and should not be relied upon or used as the sole basis for making decisions without consulting primary, more accurate, more complete or more timely sources of information. Any reliance on the material on this site is at your own risk.<br/><br/>This site may contain certain historical information. Historical information, necessarily, is not current and is provided for your reference only. We reserve the right to modify the contents of this site at any time, but we have no obligation to update any information on our site. You agree that it is your responsibility to monitor changes to our site.<br/><br/><br/>SECTION 4 - MODIFICATIONS TO THE SERVICE AND PRICES<br/><br/>Prices for our products are subject to change without notice.<br/><br/>We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time.<br/><br/>We shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.<br/><br/><br/>SECTION 5 - PRODUCTS OR SERVICES (if applicable)<br/><br/>Certain products or services may be available exclusively online through the website. These products or services may have limited quantities and are subject to return or exchange only according to our Return Policy.<br/><br/>We have made every effort to display as accurately as possible the colours and images of our products that appear at the store. We cannot guarantee that your computer monitor’s display of any colour will be accurate.<br/><br/>We reserve the right, but are not obligated, to limit the sales of our products or Services to any person, geographic region or jurisdiction. We may exercise this right on a case-by-case basis. We reserve the right to limit the quantities of any products or services that we offer. All descriptions of products or product pricing are subject to change at anytime without notice, at the sole discretion of us. We reserve the right to discontinue any product  or service at any time. Any offer for any product or service made on this site is void where prohibited.<br/><br/>We do not warrant that the quality of any products, services, information, or other material purchased or obtained by you will meet your expectations, or that any errors in the Service will be corrected.<br/><br/><br/>SECTION 6 - ACCURACY OF BILLING AND ACCOUNT INFORMATION<br/><br/>We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel quantities purchased per person, per household or per order. These restrictions may include orders placed by or under the same customer account, the same credit card, and/or orders that use the same billing and/or shipping address. In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the e-mail and/or billing address/phone number provided at the time the order was made. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers or distributors.<br/><br/>You agree to provide current, complete and accurate purchase and account information for all purchases made at our store. You agree to promptly update your account and other information, including your email address and credit card numbers and expiration dates, so that we can complete your transactions and contact you as needed.<br/><br/><br/>SECTION 7 - OPTIONAL TOOLS<br/><br/>We may provide you with access to third-party tools over which we neither monitor nor have any control nor input.<br/><br/>You acknowledge and agree that we provide access to such tools ”as is” and “as available” without any warranties, representations or conditions of any kind and without any endorsement. We shall have no liability whatsoever arising from or relating to your use of optional third-party tools.<br/><br/>Any use by you of optional tools offered through the site is entirely at your own risk and discretion and you should ensure that you are familiar with and approve of the terms on which tools are provided by the relevant third-party provider(s).<br/><br/>We may also, in the future, offer new services and/or features through the website (including, the release of new tools and resources). Such new features and/or services shall also be subject to these Terms of Service.<br/><br/><br/>SECTION 8 - THIRD-PARTY LINKS<br/><br/>Certain content, products and services available via our Service may include materials from third-parties.<br/><br/>Third-party links on this site may direct you to third-party websites that are not affiliated with us. We are not responsible for examining or evaluating the content or accuracy and we do not warrant and will not have any liability or responsibility for any third-party materials or websites, or for any other materials, products, or services of third-parties.<br/><br/>We are not liable for any harm or damages related to the purchase or use of goods, services, resources, content, or any other transactions made in connection with any third-party websites. Please review carefully the third-party's policies and practices and make sure you understand them before you engage in any transaction. Complaints, claims, concerns, or questions regarding third-party products should be directed to the third-party.<br/><br/><br/>SECTION 9 - USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS<br/><br/>If, at our request, you send certain specific submissions (for example contest entries) or without a request from us you send creative ideas, suggestions, proposals, plans, or other materials, whether online, by email, by postal mail, or otherwise (collectively, 'comments'), you agree that we may, at any time, without restriction, edit, copy, publish, distribute, translate and otherwise use in any medium any comments that you forward to us. We are and shall be under no obligation (1) to maintain any comments in confidence; (2) to pay compensation for any comments; or (3) to respond to any comments.<br/><br/>We may, but have no obligation to, monitor, edit or remove content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violates any party’s intellectual property or these Terms of Service.<br/><br/>You agree that your comments will not violate any right of any third-party, including copyright, trademark, privacy, personality or other personal or proprietary right. You further agree that your comments will not contain libelous or otherwise unlawful, abusive or obscene material, or contain any computer virus or other malware that could in any way affect the operation of the Service or any related website. You may not use a false e-mail address, pretend to be someone other than yourself, or otherwise mislead us or third-parties as to the origin of any comments. You are solely responsible for any comments you make and their accuracy. We take no responsibility and assume no liability for any comments posted by you or any third-party.<br/><br/><br/>SECTION 10 - PERSONAL INFORMATION<br/><br/>Your submission of personal information through the store is governed by our Privacy Policy. To view our Privacy Policy.<br/><br/><br/>SECTION 11 - ERRORS, INACCURACIES AND OMISSIONS<br/><br/>Occasionally there may be information on our site or in the Service that contains typographical errors, inaccuracies or omissions that may relate to product descriptions, pricing, promotions, offers, product shipping charges, transit times and availability. We reserve the right to correct any errors, inaccuracies or omissions, and to change or update information or cancel orders if any information in the Service or on any related website is inaccurate at any time without prior notice (including after you have submitted your order).<br/><br/>We undertake no obligation to update, amend or clarify information in the Service or on any related website, including without limitation, pricing information, except as required by law. No specified update or refresh date applied in the Service or on any related website, should be taken to indicate that all information in the Service or on any related website has been modified or updated.<br/><br/><br/>SECTION 12 - PROHIBITED USES<br/><br/>In addition to other prohibitions as set forth in the Terms of Service, you are prohibited from using the site or its content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Service or of any related website, other websites, or the Internet; (h) to collect or track the personal information of others; (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; (j) for any obscene or immoral purpose; or (k) to interfere with or circumvent the security features of the Service or any related website, other websites, or the Internet. We reserve the right to terminate your use of the Service or any related website for violating any of the prohibited uses.<br/><br/><br/>SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY<br/><br/>We do not guarantee, represent or warrant that your use of our service will be uninterrupted, timely, secure or error-free.<br/><br/>We do not warrant that the results that may be obtained from the use of the service will be accurate or reliable.<br/><br/>You agree that from time to time we may remove the service for indefinite periods of time or cancel the service at any time, without notice to you.<br/><br/>You expressly agree that your use of, or inability to use, the service is at your sole risk. The service and all products and services delivered to you through the service are (except as expressly stated by us) provided 'as is' and 'as available' for your use, without any representation, warranties or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement.<br/><br/>In no case shall Zepher, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict liability or otherwise, arising from your use of any of the service or any products procured using the service, or for any other claim related in any way to your use of the service or any product, including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of the service or any content (or product) posted, transmitted, or otherwise made available via the service, even if advised of their possibility. Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, our liability shall be limited to the maximum extent permitted by law.<br/><br/><br/>SECTION 14 - INDEMNIFICATION<br/><br/>You agree to indemnify, defend and hold harmless Zepher and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference, or your violation of any law or the rights of a third-party.<br/><br/><br/>SECTION 15 - SEVERABILITY<br/><br/>In the event that any provision of these Terms of Service is determined to be unlawful, void or unenforceable, such provision shall nonetheless be enforceable to the fullest extent permitted by applicable law, and the unenforceable portion shall be deemed to be severed from these Terms of Service, such determination shall not affect the validity and enforceability of any other remaining provisions.<br/><br/><br/>SECTION 16 - TERMINATION<br/><br/>The obligations and liabilities of the parties incurred prior to the termination date shall survive the termination of this agreement for all purposes.<br/><br/>These Terms of Service are effective unless and until terminated by either you or us. You may terminate these Terms of Service at any time by notifying us that you no longer wish to use our Services, or when you cease using our site.<br/><br/>If in our sole judgment you fail, or we suspect that you have failed, to comply with any term or provision of these Terms of Service, we also may terminate this agreement at any time without notice and you will remain liable for all amounts due up to and including the date of termination; and/or accordingly may deny you access to our Services (or any part thereof).<br/><br/><br/>SECTION 17 - ENTIRE AGREEMENT<br/><br/>The failure of us to exercise or enforce any right or provision of these Terms of Service shall not constitute a waiver of such right or provision.<br/><br/>These Terms of Service and any policies or operating rules posted by us on this site or in respect to The Service constitutes the entire agreement and understanding between you and us and govern your use of the Service, superseding any prior or contemporaneous agreements, communications and proposals, whether oral or written, between you and us (including, but not limited to, any prior versions of the Terms of Service).<br/><br/>Any ambiguities in the interpretation of these Terms of Service shall not be construed against the drafting party.<br/><br/><br/>SECTION 18 - GOVERNING LAW<br/><br/>These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of, NSW, Australia.<br/><br/><br/>SECTION 19 - CHANGES TO TERMS OF SERVICE<br/><br/>You can review the most current version of the Terms of Service at any time at this page.<br/><br/>We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes. Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.<br/><br/><br/>SECTION 20 - CONTACT INFORMATION<br/><br/>Questions about the Terms of Service should be sent to us at corporate.affairs@Zepher.io.<br/> <br/>
-					</div>
-				</div>
-				
-				
-				<!-- <div class="text_term1"> -->
-					<!-- <h2>Privacy Policy</h2> -->
-				
+<body>
+	<div class="filter_preview_top">
+		<a href="./index.html">
+			<img src="img/logo.png" />
+		</a>
+	</div>
+	<div class="term">
+		<div class="term_block1">
+			<div>
+				<!-- <div> -->
+				<h1><a href="./index.html"><img src="img/min/button-arrow1-min.png" style="filter: brightness(0)" /></a>Terms & conditions</h1>
 				<!-- </div> -->
-				
-				
 			</div>
 		</div>
-		
-		<footer> 
-			<div class="prefooter"><p>No annoying email to sign up to over here <img src="img/min/icon_like-min.png" /> <wbr>Instead you can follow us on the social account of your choice <wbr>to stay up to date on our latest news!</p></div>
-			<div class="footer">
-				<div class="flex_footer_item1"><span>© Zepher 2021</span><span>|</span><span>Designed with <b style="color: #c41e3a;">&#10084;</b> by Us</span><span>|</span><span>Legal Stuff</span></div>
-				<div class="flex_footer_item2">
-					<div>
-						<a href=""><img class="footer_icon" src="img/min/icon_fb-min.png" /></a>
-						<a href=""><img class="footer_icon" src="img/min/icon_ig-min.png" /></a>
-						<a href=""><img class="footer_icon" src="img/min/icon_sc-min.png" /></a>
-					</div>
-					<div></div>
+		<div class="">
+			<div class="text_term1" data-simplebar>
+				<div class="term1_content">
+					<h2>Terms of Service</h2>
+					OVERVIEW
+					<br/>
+					<br/>This website is operated by Zepher. Throughout the site, the terms “we”, “us” and “our” refer to Zepher. Zepher offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.
+					<br/>
+					<br/>By visiting our site and/ or purchasing something from us, you engage in our “Service” and agree to be bound by the following terms and conditions (“Terms of Service”, “Terms”), including those additional terms and conditions and policies referenced herein and/or available by hyperlink. These Terms of Service apply to all users of the site, including without limitation users who are browsers, vendors, customers, merchants, and/ or contributors of content.
+					<br/>
+					<br/>Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services. If these Terms of Service are considered an offer, acceptance is expressly limited to these Terms of Service.
+					<br/>
+					<br/>Any new features or tools, which are added to, the current website, application or plugin shall also be subject to the Terms of Service. You can review the most current version of the Terms of Service at any time on this page. We reserve the right to update, change or replace any part of these Terms of Service by posting updates and/or changes to our website application or plugin. It is your responsibility to check this page periodically for changes. Your continued use of or access to the website application or plugin following the posting of any changes constitutes acceptance of those changes.
+					<br/>
+					<br/>Our website, application and plugin is hosted on Heroku. They provide us with the online platform that allows us to sell our services to you.
+					<br/>
+					<br/>
+					<br/>SECTION 1 - ONLINE STORE TERMS
+					<br/>
+					<br/>By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence, or that you are the age of majority in your state or province of residence and you have given us your consent to allow any of your minor dependents to use this site.
+					<br/>
+					<br/>You may not use our products for any illegal or unauthorized purpose nor may you, in the use of the Service, violate any laws in your jurisdiction (including but not limited to copyright laws).
+					<br/>
+					<br/>You must not transmit any worms or viruses or any code of a destructive nature.
+					<br/>
+					<br/>A breach or violation of any of the Terms will result in an immediate termination of your Services.
+					<br/>
+					<br/>
+					<br/>SECTION 2 - GENERAL CONDITIONS
+					<br/>
+					<br/>We reserve the right to refuse service to anyone for any reason at any time.
+					<br/>
+					<br/>You understand that your content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information is always encrypted during transfer over networks.
+					<br/>
+					<br/>You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us.
+					<br/>
+					<br/>The headings used in this agreement are included for convenience only and will not limit or otherwise affect these Terms.
+					<br/>
+					<br/>
+					<br/>SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION
+					<br/>
+					<br/>We are not responsible if information made available on this site is not accurate, complete or current. The material on this site is provided for general information only and should not be relied upon or used as the sole basis for making decisions without consulting primary, more accurate, more complete or more timely sources of information. Any reliance on the material on this site is at your own risk.
+					<br/>
+					<br/>This site may contain certain historical information. Historical information, necessarily, is not current and is provided for your reference only. We reserve the right to modify the contents of this site at any time, but we have no obligation to update any information on our site. You agree that it is your responsibility to monitor changes to our site.
+					<br/>
+					<br/>
+					<br/>SECTION 4 - MODIFICATIONS TO THE SERVICE AND PRICES
+					<br/>
+					<br/>Prices for our products are subject to change without notice.
+					<br/>
+					<br/>We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time.
+					<br/>
+					<br/>We shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.
+					<br/>
+					<br/>
+					<br/>SECTION 5 - PRODUCTS OR SERVICES (if applicable)
+					<br/>
+					<br/>Certain products or services may be available exclusively online through the website. These products or services may have limited quantities and are subject to return or exchange only according to our Return Policy.
+					<br/>
+					<br/>We have made every effort to display as accurately as possible the colours and images of our products that appear at the store. We cannot guarantee that your computer monitor’s display of any colour will be accurate.
+					<br/>
+					<br/>We reserve the right, but are not obligated, to limit the sales of our products or Services to any person, geographic region or jurisdiction. We may exercise this right on a case-by-case basis. We reserve the right to limit the quantities of any products or services that we offer. All descriptions of products or product pricing are subject to change at anytime without notice, at the sole discretion of us. We reserve the right to discontinue any product or service at any time. Any offer for any product or service made on this site is void where prohibited.
+					<br/>
+					<br/>We do not warrant that the quality of any products, services, information, or other material purchased or obtained by you will meet your expectations, or that any errors in the Service will be corrected.
+					<br/>
+					<br/>
+					<br/>SECTION 6 - ACCURACY OF BILLING AND ACCOUNT INFORMATION
+					<br/>
+					<br/>We reserve the right to refuse any order you place with us. We may, in our sole discretion, limit or cancel quantities purchased per person, per household or per order. These restrictions may include orders placed by or under the same customer account, the same credit card, and/or orders that use the same billing and/or shipping address. In the event that we make a change to or cancel an order, we may attempt to notify you by contacting the e-mail and/or billing address/phone number provided at the time the order was made. We reserve the right to limit or prohibit orders that, in our sole judgment, appear to be placed by dealers, resellers or distributors.
+					<br/>
+					<br/>You agree to provide current, complete and accurate purchase and account information for all purchases made at our store. You agree to promptly update your account and other information, including your email address and credit card numbers and expiration dates, so that we can complete your transactions and contact you as needed.
+					<br/>
+					<br/>
+					<br/>SECTION 7 - OPTIONAL TOOLS
+					<br/>
+					<br/>We may provide you with access to third-party tools over which we neither monitor nor have any control nor input.
+					<br/>
+					<br/>You acknowledge and agree that we provide access to such tools ”as is” and “as available” without any warranties, representations or conditions of any kind and without any endorsement. We shall have no liability whatsoever arising from or relating to your use of optional third-party tools.
+					<br/>
+					<br/>Any use by you of optional tools offered through the site is entirely at your own risk and discretion and you should ensure that you are familiar with and approve of the terms on which tools are provided by the relevant third-party provider(s).
+					<br/>
+					<br/>We may also, in the future, offer new services and/or features through the website (including, the release of new tools and resources). Such new features and/or services shall also be subject to these Terms of Service.
+					<br/>
+					<br/>
+					<br/>SECTION 8 - THIRD-PARTY LINKS
+					<br/>
+					<br/>Certain content, products and services available via our Service may include materials from third-parties.
+					<br/>
+					<br/>Third-party links on this site may direct you to third-party websites that are not affiliated with us. We are not responsible for examining or evaluating the content or accuracy and we do not warrant and will not have any liability or responsibility for any third-party materials or websites, or for any other materials, products, or services of third-parties.
+					<br/>
+					<br/>We are not liable for any harm or damages related to the purchase or use of goods, services, resources, content, or any other transactions made in connection with any third-party websites. Please review carefully the third-party's policies and practices and make sure you understand them before you engage in any transaction. Complaints, claims, concerns, or questions regarding third-party products should be directed to the third-party.
+					<br/>
+					<br/>
+					<br/>SECTION 9 - USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS
+					<br/>
+					<br/>If, at our request, you send certain specific submissions (for example contest entries) or without a request from us you send creative ideas, suggestions, proposals, plans, or other materials, whether online, by email, by postal mail, or otherwise (collectively, 'comments'), you agree that we may, at any time, without restriction, edit, copy, publish, distribute, translate and otherwise use in any medium any comments that you forward to us. We are and shall be under no obligation (1) to maintain any comments in confidence; (2) to pay compensation for any comments; or (3) to respond to any comments.
+					<br/>
+					<br/>We may, but have no obligation to, monitor, edit or remove content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violates any party’s intellectual property or these Terms of Service.
+					<br/>
+					<br/>You agree that your comments will not violate any right of any third-party, including copyright, trademark, privacy, personality or other personal or proprietary right. You further agree that your comments will not contain libelous or otherwise unlawful, abusive or obscene material, or contain any computer virus or other malware that could in any way affect the operation of the Service or any related website. You may not use a false e-mail address, pretend to be someone other than yourself, or otherwise mislead us or third-parties as to the origin of any comments. You are solely responsible for any comments you make and their accuracy. We take no responsibility and assume no liability for any comments posted by you or any third-party.
+					<br/>
+					<br/>
+					<br/>SECTION 10 - PERSONAL INFORMATION
+					<br/>
+					<br/>Your submission of personal information through the store is governed by our Privacy Policy. To view our Privacy Policy.
+					<br/>
+					<br/>
+					<br/>SECTION 11 - ERRORS, INACCURACIES AND OMISSIONS
+					<br/>
+					<br/>Occasionally there may be information on our site or in the Service that contains typographical errors, inaccuracies or omissions that may relate to product descriptions, pricing, promotions, offers, product shipping charges, transit times and availability. We reserve the right to correct any errors, inaccuracies or omissions, and to change or update information or cancel orders if any information in the Service or on any related website is inaccurate at any time without prior notice (including after you have submitted your order).
+					<br/>
+					<br/>We undertake no obligation to update, amend or clarify information in the Service or on any related website, including without limitation, pricing information, except as required by law. No specified update or refresh date applied in the Service or on any related website, should be taken to indicate that all information in the Service or on any related website has been modified or updated.
+					<br/>
+					<br/>
+					<br/>SECTION 12 - PROHIBITED USES
+					<br/>
+					<br/>In addition to other prohibitions as set forth in the Terms of Service, you are prohibited from using the site or its content: (a) for any unlawful purpose; (b) to solicit others to perform or participate in any unlawful acts; (c) to violate any international, federal, provincial or state regulations, rules, laws, or local ordinances; (d) to infringe upon or violate our intellectual property rights or the intellectual property rights of others; (e) to harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate based on gender, sexual orientation, religion, ethnicity, race, age, national origin, or disability; (f) to submit false or misleading information; (g) to upload or transmit viruses or any other type of malicious code that will or may be used in any way that will affect the functionality or operation of the Service or of any related website, other websites, or the Internet; (h) to collect or track the personal information of others; (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; (j) for any obscene or immoral purpose; or (k) to interfere with or circumvent the security features of the Service or any related website, other websites, or the Internet. We reserve the right to terminate your use of the Service or any related website for violating any of the prohibited uses.
+					<br/>
+					<br/>
+					<br/>SECTION 13 - DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY
+					<br/>
+					<br/>We do not guarantee, represent or warrant that your use of our service will be uninterrupted, timely, secure or error-free.
+					<br/>
+					<br/>We do not warrant that the results that may be obtained from the use of the service will be accurate or reliable.
+					<br/>
+					<br/>You agree that from time to time we may remove the service for indefinite periods of time or cancel the service at any time, without notice to you.
+					<br/>
+					<br/>You expressly agree that your use of, or inability to use, the service is at your sole risk. The service and all products and services delivered to you through the service are (except as expressly stated by us) provided 'as is' and 'as available' for your use, without any representation, warranties or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement.
+					<br/>
+					<br/>In no case shall Zepher, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict liability or otherwise, arising from your use of any of the service or any products procured using the service, or for any other claim related in any way to your use of the service or any product, including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of the service or any content (or product) posted, transmitted, or otherwise made available via the service, even if advised of their possibility. Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, our liability shall be limited to the maximum extent permitted by law.
+					<br/>
+					<br/>
+					<br/>SECTION 14 - INDEMNIFICATION
+					<br/>
+					<br/>You agree to indemnify, defend and hold harmless Zepher and our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third-party due to or arising out of your breach of these Terms of Service or the documents they incorporate by reference, or your violation of any law or the rights of a third-party.
+					<br/>
+					<br/>
+					<br/>SECTION 15 - SEVERABILITY
+					<br/>
+					<br/>In the event that any provision of these Terms of Service is determined to be unlawful, void or unenforceable, such provision shall nonetheless be enforceable to the fullest extent permitted by applicable law, and the unenforceable portion shall be deemed to be severed from these Terms of Service, such determination shall not affect the validity and enforceability of any other remaining provisions.
+					<br/>
+					<br/>
+					<br/>SECTION 16 - TERMINATION
+					<br/>
+					<br/>The obligations and liabilities of the parties incurred prior to the termination date shall survive the termination of this agreement for all purposes.
+					<br/>
+					<br/>These Terms of Service are effective unless and until terminated by either you or us. You may terminate these Terms of Service at any time by notifying us that you no longer wish to use our Services, or when you cease using our site.
+					<br/>
+					<br/>If in our sole judgment you fail, or we suspect that you have failed, to comply with any term or provision of these Terms of Service, we also may terminate this agreement at any time without notice and you will remain liable for all amounts due up to and including the date of termination; and/or accordingly may deny you access to our Services (or any part thereof).
+					<br/>
+					<br/>
+					<br/>SECTION 17 - ENTIRE AGREEMENT
+					<br/>
+					<br/>The failure of us to exercise or enforce any right or provision of these Terms of Service shall not constitute a waiver of such right or provision.
+					<br/>
+					<br/>These Terms of Service and any policies or operating rules posted by us on this site or in respect to The Service constitutes the entire agreement and understanding between you and us and govern your use of the Service, superseding any prior or contemporaneous agreements, communications and proposals, whether oral or written, between you and us (including, but not limited to, any prior versions of the Terms of Service).
+					<br/>
+					<br/>Any ambiguities in the interpretation of these Terms of Service shall not be construed against the drafting party.
+					<br/>
+					<br/>
+					<br/>SECTION 18 - GOVERNING LAW
+					<br/>
+					<br/>These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of, NSW, Australia.
+					<br/>
+					<br/>
+					<br/>SECTION 19 - CHANGES TO TERMS OF SERVICE
+					<br/>
+					<br/>You can review the most current version of the Terms of Service at any time at this page.
+					<br/>
+					<br/>We reserve the right, at our sole discretion, to update, change or replace any part of these Terms of Service by posting updates and changes to our website. It is your responsibility to check our website periodically for changes. Your continued use of or access to our website or the Service following the posting of any changes to these Terms of Service constitutes acceptance of those changes.
+					<br/>
+					<br/>
+					<br/>SECTION 20 - CONTACT INFORMATION
+					<br/>
+					<br/>Questions about the Terms of Service should be sent to us at corporate.affairs@Zepher.io.
+					<br/>
+					<br/>
 				</div>
 			</div>
-		</footer> 
-		
-			
-			
-		
-		
-		<div id="contact_form" class="contact_form">
-			<div id="modal">
-				<div class="modal_head"><img src="img/logo.png" /></div>
-				<div id="form" class="form">
-					<button id="close-modal"><img src="img/min/close_button-min.png" /></button>
-					
-					<div class="form_poles">
-						<div class="form_box">
-							<!-- <label for="name">Name</label><br /> -->
-							<input type="text" id="name" name="name" minlength="1" maxlength="15" placeholder="Name" required>
-						</div>
-						<div class="form_box">
-							<!-- <label for="email">Email</label><br /> -->
-							<input type="email" id="email" pattern=".+@." size="30" placeholder="Email" required>
-						</div>
-						
-						<!-- <div class="form_box form_options"> -->
-							<!-- <p>Services</p> -->
-							<!-- <p>Please select your areas of interest</p> -->
-								<!-- <div class="flex_form"> -->
-									
-									<!-- <img src="img/gif3.gif" /> -->
-									<!-- <div>Mask filters on Instagram,<br />Facebook and Snapchat</div> -->
-								<!-- </div> -->
-								<!-- <div class="flex_form"> -->
-									<!-- <img src="img/gif2.gif" /> -->
-									<!-- <div>Product based filters Instagram,<br />Facebook and Snapchat</div> -->
-								<!-- </div> -->
-								<!-- <div class="flex_form"> -->
-									<!-- <img src="img/gif1.gif" /> -->
-									<!-- <div><p>Immersive environments built<br />as filters or in an AR application</p></div> -->
-								<!-- </div> -->
-								<!-- <div class="flex_form"> -->
-									<!-- <img src="img/gif4.gif" /> -->
-									<!-- <div>AR mini games</div> -->
-								<!-- </div> -->
-						<!-- </div> -->
-						
-						<div class="form_box">
-							<!-- <label for="story">Your Brief</label><br /> -->
-							<textarea id="story" name="story" rows="5" cols="33" placeholder="Your Brief"></textarea>
-						</div>
-						
-						<div class="form_box" style="margin: 0 auto;">
-							<!-- <input class="button_first" type="button" value="Send Request"> -->
-							<a href="" class="open-modal" onclick="return false"><div class="button_first">Send Request</div></a>
-						</div>
+			<div class="text_term1" data-simplebar>
+				<div class="term1_content">
+					<h2>Privacy Policy</h2>
+					PRIVACY POLICY OF ZEPHER.IO
+					<br />This Application collects some Personal Data from its Users.
+					<br />
+					<br />OWNER AND DATA CONTROLLER
+					<br />Zepher.io F409, 34 Rothschild Ave, Rosebery NSW 2018
+					<br />Owner contact email: mohammedelhassan@me.com
+					<br />
+					<br />TYPES OF DATA COLLECTED
+					<br />Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Cookies, Usage Data, first name, last name, phone number, address and email address.
+					<br />Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation texts displayed prior to the Data collection.
+					<br />Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Application.
+					<br />
+					<br />Unless specified otherwise, all Data requested by this Application is mandatory and failure to provide this Data may make it impossible for this Application to provide its services. In cases where this Application specifically states that some Data is not mandatory, Users are free not to communicate this Data without consequences to the availability or the functioning of the Service.
+					<br />
+					<br />Users who are uncertain about which Personal Data is mandatory are welcome to contact the Owner.
+					<br />Any use of Cookies – or of other tracking tools – by this Application or by the owners of third-party services used by this Application serves the purpose of providing the Service required by the User, in addition to any other purposes described in the present document and in the Cookie Policy, if available.
+					<br />Users are responsible for any third-party Personal Data obtained, published or shared through this Application and confirm that they have the third party’s consent to provide the Data to the Owner.
+					<br />
+					<br />MODE AND PLACE OF PROCESSING THE DATA
+					<br />
+					<br />METHODS OF PROCESSING
+					<br />The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data.
+					<br />
+					<br />The Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Owner, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of this Application (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Owner at any time.
+					<br />
+					<br />LEGAL BASIS OF PROCESSING
+					<br />The Owner may process Personal Data relating to Users if one of the following applies:
+					<br />• Users have given their consent for one or more specific purposes. Note: Under some legislations the Owner may be allowed to process Personal Data until the User objects to such processing (“opt-out”), without having to rely on consent or any other of the following legal bases. This, however, does not apply, whenever the processing of Personal Data is subject to European data protection law;
+					<br />• provision of Data is necessary for the performance of an agreement with the User and/or for any pre-contractual obligations thereof;
+					<br />• processing is necessary for compliance with a legal obligation to which the Owner is subject;
+					<br />• processing is related to a task that is carried out in the public interest or in the exercise of official authority vested in the Owner;
+					<br />• processing is necessary for the purposes of the legitimate interests pursued by the Owner or by a third party.
+					<br />In any case, the Owner will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract.
+					<br />
+					<br />PLACE
+					<br />The Data is processed at the Owner’s operating offices and in any other places where the parties involved in the processing are located.
+					<br />
+					<br />Depending on the User’s location, data transfers may involve transferring the User’s Data to a country other than their own. To find out more about the place of processing of such transferred Data, Users can check the section containing details about the processing of Personal Data.
+					<br />Users are also entitled to learn about the legal basis of Data transfers to a country outside the European Union or to any international organization governed by public international law or set up by two or more countries, such as the UN, and about the security measures taken by the Owner to safeguard their Data.
+					<br />
+					<br />If any such transfer takes place, Users can find out more by checking the relevant sections of this document or inquire with the Owner using the information provided in the contact section.
+					<br />
+					<br />RETENTION TIME
+					<br />Personal Data shall be processed and stored for as long as required by the purpose they have been collected for. Therefore:
+					<br />• Personal Data collected for purposes related to the performance of a contract between the Owner and the User shall be retained until such contract has been fully performed.
+					<br />• Personal Data collected for the purposes of the Owner’s legitimate interests shall be retained as long as needed to fulfil such purposes. Users may find specific information regarding the legitimate interests pursued by the Owner within the relevant sections of this document or by contacting the Owner.
+					<br />The Owner may be allowed to retain Personal Data for a longer period whenever the User has given consent to such processing, as long as such consent is not withdrawn. Furthermore, the Owner may be obliged to retain Personal Data for a longer period whenever required to do so for the performance of a legal obligation or upon order of an authority.
+					<br />
+					<br />Once the retention period expires, Personal Data shall be deleted. Therefore, the right to access, the right to erasure, the right to rectification and the right to data portability cannot be enforced after expiration of the retention period.
+					<br />
+					<br />THE PURPOSES OF PROCESSING
+					<br />The Data concerning the User is collected to allow the Owner to provide its Services, as well as for the following purposes: Access to third-party accounts, Analytics and Contacting the User.
+					<br />Users can find further detailed information about such purposes of processing and about the specific Personal Data used for each purpose in the respective sections of this document.
+					<br />
+					<br />FACEBOOK PERMISSIONS ASKED BY THIS APPLICATION
+					<br />This Application may ask for some Facebook permissions allowing it to perform actions with the User’s Facebook account and to retrieve information, including Personal Data, from it. This service allows this Application to connect with the User’s account on the Facebook social network, provided by Facebook Inc. For more information about the following permissions, refer to the Facebook permissions documentation and to the Facebook privacy policy.
+					<br />The permissions asked are the following:
+					<br />
+					<br />BASIC INFORMATION
+					<br />By default, this includes certain User’s Data such as id, name, picture, gender, and their locale. Certain connections of the User, such as the Friends, are also available. If the User has made more of their Data public, more information will be available.
+					<br />
+					<br />ACCESS REQUESTS
+					<br />Provides read access to the User’s friend requests.
+					<br />
+					<br />DETAILED INFORMATION ON THE PROCESSING OF PERSONAL DATA
+					<br />Personal Data is collected for the following purposes and using the following services:
+					<br />• Access to third-party accounts
+					<br />• Analytics
+					<br />• Contacting the User
+					<br />
+					<br />THE RIGHTS OF USERS
+					<br />Users may exercise certain rights regarding their Data processed by the Owner.
+					<br />In particular, Users have the right to do the following:
+					<br />• Withdraw their consent at any time. Users have the right to withdraw consent where they have previously given their consent to the processing of their Personal Data.
+					<br />• Object to processing of their Data. Users have the right to object to the processing of their Data if the processing is carried out on a legal basis other than consent. Further details are provided in the dedicated section below.
+					<br />• Access their Data. Users have the right to learn if Data is being processed by the Owner, obtain disclosure regarding certain aspects of the processing and obtain a copy of the Data undergoing processing.
+					<br />• Verify and seek rectification. Users have the right to verify the accuracy of their Data and ask for it to be updated or corrected.
+					<br />• Restrict the processing of their Data. Users have the right, under certain circumstances, to restrict the processing of their Data. In this case, the Owner will not process their Data for any purpose other than storing it.
+					<br />• Have their Personal Data deleted or otherwise removed. Users have the right, under certain circumstances, to obtain the erasure of their Data from the Owner.
+					<br />• Receive their Data and have it transferred to another controller. Users have the right to receive their Data in a structured, commonly used and machine readable format and, if technically feasible, to have it transmitted to another controller without any hindrance. This provision is applicable provided that the Data is processed by automated means and that the processing is based on the User&#39;s consent, on a contract which the User is part of or on pre-contractual obligations thereof.
+					<br />• Lodge a complaint. Users have the right to bring a claim before their competent data protection authority.
+					<br />
+					<br />DETAILS ABOUT THE RIGHT TO OBJECT TO PROCESSING
+					<br />Where Personal Data is processed for a public interest, in the exercise of an official authority vested in the Owner or for the purposes of the legitimate interests pursued by the Owner, Users may object to such processing by providing a ground related to their particular situation to justify the objection.
+					<br />Users must know that, however, should their Personal Data be processed for direct marketing purposes, they can object to that processing at any time without providing any justification. To learn, whether the Owner is processing Personal Data for direct marketing purposes, Users may refer to the relevant sections of this document.
+					<br />
+					<br />HOW TO EXERCISE THESE RIGHTS
+					<br />Any requests to exercise User rights can be directed to the Owner through the contact details provided in this document. These requests can be exercised free of charge and will be addressed by the Owner as early as possible and always within one month.
+					<br />
+					<br />ADDITIONAL INFORMATION ABOUT DATA COLLECTION AND PROCESSING
+					<br />
+					<br />LEGAL ACTION> 
+					<br />The User&#39;s Personal Data may be used for legal purposes by the Owner in Court or in the stages leading to possible legal action arising from improper use of this Application or the related Services.
+					<br />The User declares to be aware that the Owner may be required to reveal personal data upon request of public authorities.
+					<br />
+					<br />ADDITIONAL INFORMATION ABOUT USER&#39;S PERSONAL DATA
+					<br />In addition to the information contained in this privacy policy, this Application may provide the User with additional and contextual information concerning particular Services or the collection and processing of Personal Data upon request.
+					<br />
+					<br />SYSTEM LOGS AND MAINTENANCE
+					<br />For operation and maintenance purposes, this Application and any third-party services may collect files that record interaction with this Application (System logs) use other Personal Data (such as the IP Address) for this purpose.
+					<br />
+					<br />INFORMATION NOT CONTAINED IN THIS POLICY
+					<br />More details concerning the collection or processing of Personal Data may be requested from the Owner at any time. Please see the contact information at the beginning of this document.
+					<br />
+					<br />HOW “DO NOT TRACK” REQUESTS ARE HANDLED
+					<br />This Application does not support “Do Not Track” requests.
+					<br />To determine whether any of the third-party services it uses honor the “Do Not Track” requests, please read their privacy policies.
+					<br />
+					<br />CHANGES TO THIS PRIVACY POLICY
+					<br />The Owner reserves the right to make changes to this privacy policy at any time by giving notice to its Users on this page and possibly within this Application and/or - as far as technically and legally feasible - sending a notice to Users via any contact information available to the Owner. It is strongly recommended to check this page often, referring to the date of the last modification listed at the bottom.
+					<br />
+					<br />Should the changes affect processing activities performed on the basis of the User’s consent, the Owner shall collect new consent from the User, where required.
+					<br />
+					<br />
+					<br />Latest update: May 14, 2018
+					<br />
+					<br />
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="prefooter">
+			<p>No annoying email to sign up to over here
+				<img src="img/min/icon_like-min.png" />
+				<wbr>Instead you can follow us on the social account of your choice
+				<wbr>to stay up to date on our latest news!</p>
+		</div>
+		<div class="footer">
+			<div class="flex_footer_item1"><span>© Zepher 2021</span><span>|</span><span>Designed with <b style="color: #c41e3a;">&#10084;</b> by Us</span><span>|</span><span>Legal Stuff</span>
+			</div>
+			<div class="flex_footer_item2">
+				<div>
+					<a href="">
+						<img class="footer_icon" src="img/min/icon_fb-min.png" />
+					</a>
+					<a href="">
+						<img class="footer_icon" src="img/min/icon_ig-min.png" />
+					</a>
+					<a href="">
+						<img class="footer_icon" src="img/min/icon_sc-min.png" />
+					</a>
+				</div>
+				<div></div>
+			</div>
+		</div>
+	</footer>
+	<div id="contact_form" class="contact_form">
+		<div id="modal">
+			<div class="modal_head">
+				<img src="img/logo.png" />
+			</div>
+			<div id="form" class="form">
+				<button id="close-modal">
+					<img src="img/min/close_button-min.png" />
+				</button>
+				<div class="form_poles">
+					<div class="form_box">
+						<!-- <label for="name">Name</label><br /> -->
+						<input type="text" id="name" name="name" minlength="1" maxlength="15" placeholder="Name" required>
+					</div>
+					<div class="form_box">
+						<!-- <label for="email">Email</label><br /> -->
+						<input type="email" id="email" pattern=".+@." size="30" placeholder="Email" required>
+					</div>
+					<!-- <div class="form_box form_options"> -->
+					<!-- <p>Services</p> -->
+					<!-- <p>Please select your areas of interest</p> -->
+					<!-- <div class="flex_form"> -->
+					<!-- <img src="img/gif3.gif" /> -->
+					<!-- <div>Mask filters on Instagram,<br />Facebook and Snapchat</div> -->
+					<!-- </div> -->
+					<!-- <div class="flex_form"> -->
+					<!-- <img src="img/gif2.gif" /> -->
+					<!-- <div>Product based filters Instagram,<br />Facebook and Snapchat</div> -->
+					<!-- </div> -->
+					<!-- <div class="flex_form"> -->
+					<!-- <img src="img/gif1.gif" /> -->
+					<!-- <div><p>Immersive environments built<br />as filters or in an AR application</p></div> -->
+					<!-- </div> -->
+					<!-- <div class="flex_form"> -->
+					<!-- <img src="img/gif4.gif" /> -->
+					<!-- <div>AR mini games</div> -->
+					<!-- </div> -->
+					<!-- </div> -->
+					<div class="form_box">
+						<!-- <label for="story">Your Brief</label><br /> -->
+						<textarea id="story" name="story" rows="5" cols="33" placeholder="Your Brief"></textarea>
+					</div>
+					<div class="form_box" style="margin: 0 auto;">
+						<!-- <input class="button_first" type="button" value="Send Request"> -->
+						<a href="" class="open-modal" onclick="return false">
+							<div class="button_first">Send Request</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/jquery.scrolly.min.js"></script> -->
+	<!-- <!-- <script src="js/jquery-ui.min.js"></script> -->
+	<!-- <script src="js/main.js"></script> -->
+	<script src="js/simplebar.min.js"></script>
+</body>
 
-
-
-		
-		<script src="js/jquery.min.js"></script>
-		<!-- <script src="js/jquery.scrolly.min.js"></script> -->
-		<!-- <!-- <script src="js/jquery-ui.min.js"></script> -->
-		<!-- <script src="js/main.js"></script> -->
-		<script src="js/simplebar.min.js"></script>
-
-	</body>
 </html>

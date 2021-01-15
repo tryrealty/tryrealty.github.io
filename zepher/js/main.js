@@ -35,6 +35,11 @@ document.querySelector("#close-modal").addEventListener('click', function() {
 interact('#child2')
   .draggable({
     // enable inertial throwing
+	startAxis: 'x',
+	lockAxis: 'x',
+	
+    manualStart: false,
+  
     inertia: true,
     // keep the element within the area of it's parent
     modifiers: [
