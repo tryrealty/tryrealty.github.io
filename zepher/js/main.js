@@ -38,7 +38,6 @@ interact('#child2')
 	startAxis: 'x',
 	lockAxis: 'x',
 	
-    manualStart: false,
   
     inertia: true,
     // keep the element within the area of it's parent
