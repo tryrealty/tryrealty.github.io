@@ -51,7 +51,15 @@
 			</div>
 		</div>
 		<div class="flex_art_item2">
-			<img src="img/screen1.jpg" />
+			<!-- <img src="img/screen1.jpg" /> -->
+			<div>
+				<video onloadeddata="this.play()" poster="videos/main.jpg" preload="auto" autoplay="true" loop="true" muted="muted" style="border: 1px solid black" controls>
+					<source src="videos/main.mp4" type="video/mp4">
+					<!-- <source src="video.webm" type="video/webm" /> -->
+					<!-- <source src="video.ogg" type="video/ogg" /> -->
+					Your browser does not support the video tag.
+				</video> 
+			</div>
 		</div>
 	</article>
 	<article id="values" class="flex_article2">
