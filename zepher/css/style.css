@@ -848,6 +848,36 @@ nav img {
 		
     pointer-events: none;
 	}
+	
+	
+	
+.arrow_slider2 {
+	position: absolute;
+	right: 20px;
+	top: 180px;
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+	background-color: white;
+	text-align: center;
+	z-index: 99999;
+	box-shadow: 0px 0px 36px #00000070;
+	
+    pointer-events: none;
+		display: none;
+}
+
+.arrow_slider2 img {
+	width: 25px;
+	margin-top: 20px;
+	opacity: 0.5;
+}
+
+
+
+
+	/* .arrow_slider2 { */
+	/* } */
 
 
 
@@ -1081,6 +1111,10 @@ nav img {
   
   
   
+	.arrow_slider2 {
+		display: block;
+	}
+
 
 	#team-child {
 	  position: relative;
@@ -1201,6 +1235,10 @@ nav img {
 	#team-child a {
 		display: none;
 	}
+	
+	.arrow_slider2 {
+		display: block;
+	}
 
 	#team-child2 {
 		
@@ -1212,6 +1250,13 @@ nav img {
 	}
 	
 }
+
+
+
+
+
+
+
 
 
 
@@ -1240,7 +1285,28 @@ nav img {
   }
   
   
+	.arrow_slider2 {
+		display: none;
+	}
+
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	/* // ///////////////////////////////////////////////////////////////////  */
 	
@@ -1271,11 +1337,11 @@ nav img {
 }
 		
 		
-.filter_preview_block1 div:first-child {
+.preview_list1 {
   width: 600px;
 }
 
-.filter_preview_block1 div:first-child img {
+.preview_list1 img {
   position: relative;
   top: 12px;
   width: 50px;
@@ -1293,7 +1359,7 @@ nav img {
   text-decoration: none;
 }
 
-.filter_preview_block1 div:last-child {
+.preview_list2 {
   width: 320px;
   box-shadow: 0px 16px 36px #00000000;
 }
@@ -1301,14 +1367,22 @@ nav img {
 .img_switcher {
 	width: 320px;
 	height: 40px;
+	text-align: center;
 }
 
 .img_switcher_circle {
 	width: 16px;
 	height: 16px;
+	margin: 10px 15px 0 15px;
 	border: 1px solid white;
 	border-radius: 8px;
-	
+	display: inline-block;
+	background-color: white;
+	box-shadow: 0px 0px 10px #00000050;
+}
+
+.sel_point {
+	background-color: transparent;
 }
 
 .filter_preview_block2_bgcolor {
@@ -1413,7 +1487,7 @@ nav img {
     margin: 0 20px 10px 90px;
   }
 
-  .filter_preview_block1 div:last-child {
+  .preview_list2 {
     width: 280px;
   }
 
@@ -1422,11 +1496,11 @@ nav img {
     margin-right: 20px;
   }
 			
-  .filter_preview_block1 div:first-child img {
+  .preview_list1 img {
     margin: 0px 20px 0px 10px;
   }
 
-  .filter_preview_block1 div:last-child img {
+  .preview_list2 img {
     width: 250px;
   }
 
@@ -1434,7 +1508,7 @@ nav img {
     max-width: 700px;
   }
 
-  .filter_preview_block2 div:last-child {
+  .preview_list2 {
     display: none;
   }
 
@@ -1456,6 +1530,10 @@ nav img {
     flex-direction: column;
     max-height: 100%;
   }
+  
+  .preview_list1 p {
+	max-width: 450px;
+  }
 
   .filter_preview_block2 .list1 {
     margin: 0 50px 0 50px;
@@ -1465,16 +1543,16 @@ nav img {
     margin: 0px 15px 15px 15px;
   }
 
-  .filter_preview_block1 div:first-child {
+  .preview_list1 {
     width: 400px;
 			/* margin-right: 0px; */;
   }
 
-  .filter_preview_block1 div:last-child img {
+  .preview_list2 img {
     width: 320px;
   }
 
-  .filter_preview_block1 div:last-child {
+  .preview_list2 {
     width: 320px;
     margin: 20px auto;
   }
