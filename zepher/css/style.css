@@ -1491,7 +1491,7 @@ nav img {
     width: 280px;
   }
 
-  .filter_preview_block1 div:nth-child(2) {
+  .preview_list2 {
     width: 300px;
     margin-right: 20px;
   }
@@ -1503,14 +1503,18 @@ nav img {
   .preview_list2 img {
     width: 250px;
   }
+  
+.img_switcher {
+	width: 250px;
+}
 
   .filter_preview_block2 {
     max-width: 700px;
   }
 
-  .preview_list2 {
-    display: none;
-  }
+  /* .preview_list2 { */
+    /* display: none; */
+  /* } */
 
   .filter_button2 div {
     margin-left: 0;
@@ -1552,6 +1556,10 @@ nav img {
   .preview_list2 img {
     width: 320px;
   }
+  
+.img_switcher {
+	width: 320px;
+}
 
   .preview_list2 {
     width: 320px;
