@@ -1099,11 +1099,16 @@ nav img {
   .flex_article6 {
     flex-direction: column;
 	max-width: 300px;
-	width: 80%;
+	/* width: 80%; */
   }
   
   .flex6_art_list {
 	  margin: 0 auto;
+  }
+  
+  .flex6_art_list img {
+	  margin-top: 10px;
+	  margin-bottom: -10px;
   }
 
   .flex2_art_item h1 {
