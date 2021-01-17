@@ -840,17 +840,22 @@ nav img {
   display: flex;
   flex-direction: row;
   margin: 0 auto 80px auto;
-  max-width: 900px;
+  width: 980px;
   text-align: center;
   font-size: 16px;
+  justify-content: center;
+  /* align-items: center; */
 }
 
-.flex6_art_list1 {
-  flex: 1;
+.flex6_art_list {
+  flex: 0;
+  /* padding: 0 40px; */
+  margin: 0 50px;
+  min-width: 240px;
 }
 
 .flex6_art_list2 {
-  flex: 1;
+  /* flex: 1; */
 }
 
 .flex_article6 img {
@@ -867,7 +872,7 @@ nav img {
 .about {
   color: #9A9C9D;
   text-align: left;
-  width: 324px;
+  /* width: 324px; */
   margin: 20px auto;
 }
 
@@ -1093,6 +1098,12 @@ nav img {
 
   .flex_article6 {
     flex-direction: column;
+	max-width: 300px;
+	width: 80%;
+  }
+  
+  .flex6_art_list {
+	  margin: 0 auto;
   }
 
   .flex2_art_item h1 {
