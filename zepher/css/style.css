@@ -762,7 +762,7 @@ nav img {
 }
 
 #child2 {
-  touch-action: pan-x;
+  touch-action: touch-action;
 }
 
 .parent {
@@ -1480,7 +1480,7 @@ nav img {
 			
   .filter_preview_block1 {
     max-width: 700px;
-    max-height: 600px;
+    max-height: 700px;
   }
 
   .filter_preview_block1 p {
@@ -1514,6 +1514,7 @@ nav img {
 
   .filter_button2 div {
     margin-left: 0;
+    /* margin-bottom: 5; */
     max-width: 320px;
   }
 }

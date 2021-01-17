@@ -50,7 +50,7 @@ interact('#child2')
       })
     ],
     // enable autoScroll
-    autoScroll: true,
+    // autoScroll: true,
 
     listeners: {
       // call this function on every dragmove event
@@ -89,7 +89,7 @@ interact('#team-child2')
       })
     ],
     // enable autoScroll
-    autoScroll: true,
+    // autoScroll: true,
 
     listeners: {
       // call this function on every dragmove event
