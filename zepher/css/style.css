@@ -1295,11 +1295,20 @@ nav img {
 
 .filter_preview_block1 div:last-child {
   width: 320px;
+  box-shadow: 0px 16px 36px #00000000;
 }
 
 .img_switcher {
-  width: 320px;
-  height: 20px;
+	width: 320px;
+	height: 40px;
+}
+
+.img_switcher_circle {
+	width: 16px;
+	height: 16px;
+	border: 1px solid white;
+	border-radius: 8px;
+	
 }
 
 .filter_preview_block2_bgcolor {
