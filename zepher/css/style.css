@@ -764,10 +764,9 @@ nav img {
 
 
 #child2{
-position: relative;
-text-align: center;
-/* line-height: 1; */
-cursor: move;
+	position: relative;
+	text-align: center;
+	cursor: move;
 }
 
 
@@ -776,8 +775,6 @@ cursor: move;
   /* touch-action: touch-action; */
 /* } */
 
-/* .parent { */
-/* } */
 
 .flex_article5_h1 {
   width: 100%;
@@ -1126,6 +1123,19 @@ cursor: move;
 	}
 
 
+
+
+
+
+	#child2{
+		position: relative;
+		text-align: center;
+		cursor: move;
+	}
+
+
+
+
 	#team-child {
 	  position: relative;
 	  width: 100%;
@@ -1133,15 +1143,11 @@ cursor: move;
 	}
 
 	#team-child2 {
-		
-    pointer-events: auto;
-	  touch-action: pan-x;
+		position: relative;
+		text-align: center;
+		cursor: move;
+		pointer-events: auto;
 	}
-
-	.team-parent {
-	  cursor: w-resize;
-	}
-
 
 
 
@@ -1309,6 +1315,13 @@ cursor: move;
 
 
 
+@media screen and (max-width: 730px) {
+	
+	
+	
+	
+	
+}
 
 
 
