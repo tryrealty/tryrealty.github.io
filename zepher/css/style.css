@@ -1528,35 +1528,96 @@ nav img {
 }
 
 .preview_list2 {
+	display: flex;
+	
+  flex-direction: column;
   width: 320px;
   box-shadow: 0px 16px 36px #00000000;
 }
 
 .preview_list2 img {
-	/* border-radius:  */
+	border: 10px solid white;
+	border-radius: 40px;
+	box-shadow: 0px 0px 36px #00000050;
 }
 
 
 .img_switcher {
+	order: 2;
 	width: 320px;
 	height: 40px;
 	text-align: center;
+	cursor: default;
+	margin-top: 15px;
 }
 
-.img_switcher_circle {
-	width: 16px;
-	height: 16px;
-	margin: 10px 15px 0 15px;
-	border: 1px solid white;
-	border-radius: 8px;
-	display: inline-block;
-	background-color: white;
-	box-shadow: 0px 0px 10px #00000050;
+.img_preview {
+	min-height: 653px;
+	order: 1;
 }
 
-.sel_point {
-	background-color: transparent;
+
+
+
+input[type="radio"]
+{
+	width: 15px;
+	margin-right: 10px;
+	cursor: pointer;
+	color: black;
 }
+
+
+
+
+
+/* .prev_img1 { */
+	/* display: block; */
+/* } */
+
+/* .prev_img2 { */
+	/* display: none; */
+/* } */
+
+/* .sel1:checked { */
+	/* background-color: transparent; */
+/* } */
+
+
+/* #nav li:hover div { */
+  /* opacity: 1; */
+/* } */
+
+
+/* #rad1:checked + .prev_img1 { */
+	/* opacity: 0; */
+/* } */
+
+
+/* #rad2:checked + .prev_img2 { */
+	/* opacity: 1; */
+/* } */
+
+input[type="radio"][id="rad2"]:checked ~ img {
+	opacity: 0;
+}
+
+/* #rad2:checked .prev_img2 { */
+	/* display: none; */
+/* } */
+
+
+/* .img_switcher_circle { */
+	/* width: 16px; */
+	/* height: 16px; */
+	/* margin: 10px 15px 0 15px; */
+	/* border: 1px solid white; */
+	/* border-radius: 8px; */
+	/* display: inline-block; */
+	/* background-color: white; */
+	/* box-shadow: 0px 0px 10px #00000050; */
+/* } */
+
 
 .filter_preview_block2_bgcolor {
   height: 500px;
@@ -1681,6 +1742,10 @@ nav img {
 	width: 250px;
 }
 
+.img_preview {
+	min-height: 550px;
+}
+
   .filter_preview_block2 {
     max-width: 700px;
   }
@@ -1689,6 +1754,10 @@ nav img {
     /* display: none; */
   /* } */
 
+  .filter_button1 div {
+    max-width: 250px;
+  }
+  
   .filter_button2 div {
     margin-left: 0;
     /* margin-bottom: 5; */
@@ -1734,9 +1803,14 @@ nav img {
 	width: 320px;
 }
 
+.img_preview {
+	min-height: 706px;
+}
+
+
   .preview_list2 {
     width: 320px;
-    margin: 20px auto;
+    margin: 40px auto;
   }
 		
   .filter_button2 div {
