@@ -319,6 +319,10 @@ nav img {
   }
 }
 
+#nav ul {
+    margin-left: -20px;
+}
+
 #top {
   height: 144px;
 }
@@ -733,26 +737,53 @@ nav img {
   flex-direction: row;
 }
 
+
+
+
+/* .arrow_slider { */
+	/* position: absolute; */
+	/* right: 20px; */
+	/* top: 180px; */
+	/* height: 80px; */
+	/* width: 80px; */
+	/* border-radius: 40px; */
+	/* background-color: white; */
+	/* text-align: center; */
+	/* z-index: 99999; */
+	/* box-shadow: 0px 0px 36px #00000070; */
+	
+    /* pointer-events: none; */
+/* } */
+
+/* .arrow_slider img { */
+	/* width: 25px; */
+	/* margin-top: 20px; */
+	/* opacity: 0.5; */
+/* } */
+
+
+
 .arrow_slider {
 	position: absolute;
-	right: 20px;
-	top: 180px;
+	right: 0px;
+	top: 50px;
 	height: 80px;
 	width: 80px;
-	border-radius: 40px;
-	background-color: white;
+	/* border-radius: 40px; */
+	/* background-color: white; */
 	text-align: center;
 	z-index: 99999;
-	box-shadow: 0px 0px 36px #00000070;
+	shadow: 0px 0px 36px #ffffff00;
 	
     pointer-events: none;
 }
 
 .arrow_slider img {
-	width: 25px;
+	width: 100%;
 	margin-top: 20px;
-	opacity: 0.5;
+	/* opacity: 0.5; */
 }
+
 
 
 #child {
@@ -1315,16 +1346,112 @@ nav img {
 
 
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 400px) {
+	
+	nav {
+    height: 100px;
+}
+
+.nav_circle {
+    height: 10px;
+    width: 20px;
+}
+	
+	.block {
+		width: 100%;
+		box-sizing: border-box;
+		text-align: center;
+		padding-left: 15px;
+		padding-right: 15px;
+	
+	}
+	
+	.menu {
+    width: 100%;
+    text-align: center;
+    padding-top: 0px;
+	}
+
+	
+	.block a {
+		display: block;
+		margin-right: 0px;
+	}
 	
 	
 	
+	.flex2_art_item {
+		width: 100%;
+		box-sizing: border-box;
+		text-align: center;
+		padding-left: 15px;
+		padding-right: 15px;
+		
+	}
+	
+	
+	
+	.flex_article3 {
+		max-width: 100%;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	
+	
+	
+	
+	.flex3_art_item2 {
+		max-width: 100%;
+		/* min-width: auto; */
+		box-sizing: border-box;
+		overflow: hidden;
+		}
+
+
+	.flex3_art_list5 {
+		max-width: 100%;
+		box-sizing: border-box;
+		font-size: 15px;
+		margin: auto;
+	}	
+
+	
+	.flex3_art_list5 p {
+		/* display: block; */
+		width: 50%;
+		box-sizing: border-box;
+	}
+	
+	
+	.flex3_art_list5 img:last-child {
+    /* height: 44px; */
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+}
+
+
+
+
+	.flex3_art_list6 {
+		max-width: 100%;
+		box-sizing: border-box;
+		margin: auto;
+		padding: 30px 15px;
+	}
 	
 	
 }
 
 
 
+
+@media screen and (max-width: 360px) {
+	#nav li {
+		font-size: 12px;
+		padding-left: 15px;
+	}
+	
+}
 
 
 
