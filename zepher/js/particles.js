@@ -1,3 +1,25 @@
+
+
+
+let elementsArray = document.querySelectorAll(".open-modal");
+
+elementsArray.forEach(function(elem) {
+    elem.addEventListener("click", function() {
+		document.querySelector("#contact_form").style.display = 'block';
+		document.querySelector("body").style.overflow = 'hidden';
+    });
+});
+
+
+document.querySelector("#close-modal").addEventListener('click', function() {
+    document.querySelector("#contact_form").style.display = 'none';
+    document.querySelector("body").style.overflow = 'visible';
+});
+
+
+
+
+
 // var score = 0;
 
 function random(min,max){
