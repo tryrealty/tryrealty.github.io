@@ -24,13 +24,15 @@
 					<!-- </div> -->
 				</div>
 				<div class="preview_list2">
-					<img src="img/min/screen1-min.png" />
 					<div class="img_switcher">
-						<a href=""><div class="img_switcher_circle sel_point"></div></a>
-						<a href=""><div class="img_switcher_circle"></div></a>
-						<a href=""><div class="img_switcher_circle"></div></a>
-						<a href=""><div class="img_switcher_circle"></div></a>
+						<input id="rad1" class="preview_radio" type="radio" value="n1" name="rad" checked />
+						<input id="rad2" class="preview_radio" type="radio" value="n2" name="rad"/>
+						<input id="rad3" class="preview_radio" type="radio" value="n3" name="rad"/>
+						<input id="rad4" class="preview_radio" type="radio" value="n4" name="rad"/>
 					</div> 
+					<div class="img_preview">
+						<img class="prev_img" src="img/preview_fun_1.jpg" />
+					</div>
 				</div>
 			</div>
 			
@@ -139,13 +141,37 @@
 
 
 
-		
 		<script src="js/jquery.min.js"></script>
-		<!-- <script src="js/jquery.scrolly.min.js"></script> -->
-		<!-- <!-- <script src="js/jquery-ui.min.js"></script> -->
-		<!-- <script src="js/interact.min.js"></script> -->
-		<script src="js/main.js"></script>
 		<script src="js/particles.js"></script>
+		
+		
+		<script type='text/javascript'>
+			$(document).ready(function(){
+				$("input:radio[name=rad]").click(function() {
+					var value = $(this).val();
+					var image_name;
+					if(value == 'n1'){
+						image_name = "img/preview_fun_1.jpg";
+					}else if(value == 'n2'){
+						image_name = "img/preview_fun_2.jpg";
+					}else if(value == 'n3'){
+						image_name = "img/preview_fun_3.jpg";
+					}else if(value == 'n4'){
+						image_name = "img/preview_fun_4.jpg";
+					}
+					
+					 <!-- $('.prev_img1').attr('src', image_name); -->
+					 
+						$('.prev_img').fadeOut(300, function(){
+						  $(this).attr('src', image_name).bind('onreadystatechange load', function(){
+							 if (this.complete) $(this).fadeIn(300);
+						  });
+					   });
+		   
+		   
+				});
+			});
+		</script>
 
 	</body>
 </html>

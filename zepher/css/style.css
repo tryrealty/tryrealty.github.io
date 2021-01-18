@@ -1661,8 +1661,9 @@ input[type="radio"][id="rad2"]:checked ~ img {
 .filter_preview_block2 .list1 {
 		/* min-width: 110px; */
   height: 50px;
-  max-width: 540px;
-  margin: 0 50px 0 90px;
+  max-width: 600px;
+  margin: 0 50px 0 0px;
+  
 }
 
 .filter_preview_block2 .list2 {
