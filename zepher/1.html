@@ -3,6 +3,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Javascript touch события. Часть 2. Перемещение объектов.</title>
 <script>
+
+
+
+
+
+
 function isContained(m, e){
 	var e=e||window.event
 	var c=/(click)|(mousedown)|(mouseup)/i.test(e.type)? e.target : ( e.relatedTarget || ((e.type=="mouseover")? e.fromElement : e.toElement) )
@@ -35,7 +41,7 @@ window.addEventListener('load', function(){
 		touchobj = e.changedTouches[0] // reference first touch point for this event
 		var dist = parseInt(touchobj.clientX) - startx // calculate dist traveled by touch point
 		// move box according to starting pos plus dist, with lower limit 0 and upper limit 380 so it doesn't move outside track
-		box2.style.left = ( (boxleft + dist > 380)? 380 : (boxleft + dist < 0)? 0 : boxleft + dist ) + 'px'
+		box2.style.left = ( (boxleft + dist > 580)? 380 : (boxleft + dist < 0)? 0 : boxleft + dist ) + 'px'
 		<!-- e.preventDefault() -->
 	}, false)
 	
@@ -55,7 +61,8 @@ window.addEventListener('load', function(){
 				touchobj = e // reference first touch point for this event
 				var dist = parseInt(touchobj.clientX) - startx // calculate dist traveled by touch point
 				// move box according to starting pos plus dist, with lower limit 0 and upper limit 380 so it doesn't move outside track
-				box2.style.left = ( (boxleft + dist > 380)? 380 : (boxleft + dist < 0)? 0 : boxleft + dist ) + 'px'
+				console.log(box2.style.left);
+				box2.style.left = ( (boxleft + dist > 580)? 580 : (boxleft + dist < -100)? -100 : boxleft + dist ) + 'px'
 				e.preventDefault()
 			}
 		}, false)
@@ -72,6 +79,10 @@ window.addEventListener('load', function(){
 	}
 
 }, false)
+
+
+
+
 </script>
 
 <style>
@@ -79,38 +90,38 @@ window.addEventListener('load', function(){
 #box2{
 width: 100px;
 height: 50px;
-font-size:1.4em;
-border: 1px solid orange;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
+<!-- font-size:1.4em; -->
+<!-- border: 1px solid orange; -->
+<!-- -webkit-box-sizing: border-box; -->
+<!-- -moz-box-sizing: border-box; -->
 box-sizing: border-box;
 background: lightyellow;
-position: absolute;
-padding-top: 10px;
--moz-box-shadow: 0 0 5px gray;
-box-shadow: 0 0 5px gray;
-text-align: center;
-line-height: 1;
-cursor:pointer
+<!-- position: relative; -->
+<!-- padding-top: 10px; -->
+<!-- -moz-box-shadow: 0 0 5px gray; -->
+<!-- box-shadow: 0 0 5px gray; -->
+<!-- text-align: center; -->
+<!-- line-height: 1; -->
+<!-- cursor:pointer -->
 }
 
 .track{
 width:480px;
 height: 55px;
-position: relative;
+<!-- position: relative; -->
 overflow: hidden;
 }
 
-.track:after{
-content: '';
-display: block;
-width: 100%;
-height: 1px;
-background: black;
-position: absolute;
-top: 49%;
-z-index: -1;
-}
+<!-- .track:after{ -->
+<!-- content: ''; -->
+<!-- display: block; -->
+<!-- width: 100%; -->
+<!-- height: 1px; -->
+<!-- background: black; -->
+<!-- position: absolute; -->
+<!-- top: 49%; -->
+<!-- z-index: -1; -->
+<!-- } -->
 </style>
 
 </head>
