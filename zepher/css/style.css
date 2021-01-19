@@ -18,6 +18,14 @@ section, summary, time, mark, audio, video {
 }
 
 
+input:focus{
+  outline:none;
+}
+
+
+
+
+
 h1 {
   font-weight: bold;
   font-size: 36px;
