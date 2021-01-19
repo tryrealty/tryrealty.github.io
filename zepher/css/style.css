@@ -443,6 +443,34 @@ nav img {
   text-decoration: none;
 }
 
+.button_first:active {
+  background: #4F2FBA;
+}
+
+
+
+.button_form {
+  width: 320px;
+  height: 48px;
+  color: white;
+  background: #6C40FF;
+  border-radius: 24px;
+  border: 0px;
+  opacity: 1;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px 0 50px 0;
+  /* line-height: 48px; */
+  /* text-decoration: none; */
+}
+
+.button_form:active {
+  background: #4F2FBA;
+}
+
 .block a:link {
   text-decoration: none;
 }

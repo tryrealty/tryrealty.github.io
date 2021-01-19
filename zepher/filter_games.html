@@ -97,48 +97,20 @@
 				<div id="form" class="form">
 					<button id="close-modal"><img src="img/min/close_button-min.png" /></button>
 					
-					<div class="form_poles">
+					<form class="form_poles" method="post" action="mail.php">
 						<div class="form_box">
-							<!-- <label for="name">Name</label><br /> -->
 							<input type="text" id="name" name="name" minlength="1" maxlength="15" placeholder="Name" required>
 						</div>
 						<div class="form_box">
-							<!-- <label for="email">Email</label><br /> -->
-							<input type="email" id="email" pattern=".+@." size="30" placeholder="Email" required>
+							<input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" size="30" placeholder="Email" required>
 						</div>
-						
-						<!-- <div class="form_box form_options"> -->
-							<!-- <p>Services</p> -->
-							<!-- <p>Please select your areas of interest</p> -->
-								<!-- <div class="flex_form"> -->
-									
-									<!-- <img src="img/gif3.gif" /> -->
-									<!-- <div>Mask filters on Instagram,<br />Facebook and Snapchat</div> -->
-								<!-- </div> -->
-								<!-- <div class="flex_form"> -->
-									<!-- <img src="img/gif2.gif" /> -->
-									<!-- <div>Product based filters Instagram,<br />Facebook and Snapchat</div> -->
-								<!-- </div> -->
-								<!-- <div class="flex_form"> -->
-									<!-- <img src="img/gif1.gif" /> -->
-									<!-- <div><p>Immersive environments built<br />as filters or in an AR application</p></div> -->
-								<!-- </div> -->
-								<!-- <div class="flex_form"> -->
-									<!-- <img src="img/gif4.gif" /> -->
-									<!-- <div>AR mini games</div> -->
-								<!-- </div> -->
-						<!-- </div> -->
-						
 						<div class="form_box">
-							<!-- <label for="story">Your Brief</label><br /> -->
-							<textarea id="story" name="story" rows="5" cols="33" placeholder="Your Brief"></textarea>
+							<textarea id="story" name="message" maxlength="6000" placeholder="Your Brief" required></textarea>
 						</div>
-						
 						<div class="form_box" style="margin: 0 auto;">
-							<!-- <input class="button_first" type="button" value="Send Request"> -->
-							<a href="" class="open-modal" onclick="return false"><div class="button_first">Send Request</div></a>
+							<input class="button_form" type="submit" value="Send">	
 						</div>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
