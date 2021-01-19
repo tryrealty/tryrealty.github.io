@@ -1876,13 +1876,65 @@ input[type="radio"][id="rad2"]:checked ~ img {
   .filter_preview_block2_bgcolor {
     position: relative;
     top: -350px;
-    padding-top: 350px;
-    margin-bottom: -350px;
+    padding-top: 300px;
+    margin-bottom: -300px;
   }
 }
 	
 	
 	
+@media screen and (max-width: 600px) {
+	
+	/* .filter_preview_block1 h1 { */
+    /* font-weight: bold; */
+
+/* } */
+
+		
+		.filter_preview_block2_bgcolor {
+			/* box-sizing:  border-box; */
+			height: 650px;
+		}
+		
+	  .wind4 {
+		position: relative;
+		top: 420px;
+	  }
+		
+		
+}
+
+
+	
+@media screen and (max-width: 450px) {
+	
+	.filter_button1 div {
+    margin: 0 auto;
+}
+
+
+	.preview_list1 {
+    width: 350px;
+    margin-right: 0px;
+}
+
+
+	.img_preview {
+    min-height: 638px;
+}
+
+
+		.preview_list2 img {
+    width: 290px;
+}
+		.img_switcher {
+    width: 290px;
+}
+		
+}
+
+
+
 	/* /////////////////////////// */
 
 
