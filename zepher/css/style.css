@@ -538,19 +538,48 @@ nav img {
   animation: movement 2s ease-out infinite;
 }
 
+/* .flex3_art_list2 { */
+/* } */
+
+
+
+
+
 .flex3_art_list2 {
-  position: relative;
-  z-index: 20;
+  flex: 7;
+  width: 400px;
+  
+	position: relative;
+	z-index: 20;
+	border: 10px solid white;
+	border-radius: 40px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	width: 305px;
+	/* margin-right: 20px; */
+  
 }
+/* .flex_art_item2 div { */
+/* } */
+.flex3_art_list2 video {
+	    max-width: 428px;
+	margin: 0 auto;
+	border: 0px;
+	border-radius: 30px;
+}
+
+
+
+
 
 .flex3_art_list3 {
   position: relative;
-  top: -80px;
+  top: -65px;
   height: 10px;
   z-index: 30;
 }
 
 .flex3_art_list3 img {
+	margin: 0 auto;
   height: 120px;
 }
 
@@ -772,7 +801,7 @@ nav img {
 	/* border-radius: 40px; */
 	/* background-color: white; */
 	text-align: center;
-	z-index: 99999;
+	z-index: 99990;
 	shadow: 0px 0px 36px #ffffff00;
 	
     pointer-events: none;
@@ -921,7 +950,7 @@ nav img {
 	height: 80px;
 	width: 80px;
 	text-align: center;
-	z-index: 99999;
+	z-index: 99990;
 	shadow: 0px 0px 36px #ffffff00;
 	
     pointer-events: none;
